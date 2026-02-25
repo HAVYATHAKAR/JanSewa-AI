@@ -1,0 +1,3344 @@
+[
+  {
+    "id": "pm-kisan",
+    "name": "PM Kisan Samman Nidhi Yojana",
+    "description": "Financial assistance of Rs.6000/year in three installments to farmer families with cultivable land.",
+    "category": "Agriculture",
+    "eligibility": "All landholding farmer families",
+    "state": "All India",
+    "target": "Farmers",
+    "benefits": [
+      "Rs.6,000/year in 3 installments",
+      "Direct bank transfer",
+      "No minimum land holding"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Land records",
+      "Bank passbook"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://pmkisan.gov.in"
+  },
+  {
+    "id": "pmfby",
+    "name": "PM Fasal Bima Yojana",
+    "description": "Crop insurance at low premiums: 2% Kharif, 1.5% Rabi, 5% commercial crops.",
+    "category": "Agriculture",
+    "eligibility": "All farmers growing notified crops",
+    "state": "All India",
+    "target": "Farmers",
+    "benefits": [
+      "Low premium crop insurance",
+      "Post-harvest loss coverage",
+      "Technology-driven claims"
+    ],
+    "documents": [
+      "Land records",
+      "Sowing certificate",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Season-wise",
+    "sourceUrl": "https://pmfby.gov.in"
+  },
+  {
+    "id": "kcc",
+    "name": "Kisan Credit Card",
+    "description": "Credit up to Rs.3 lakh at 4% interest for crop cultivation and farm needs.",
+    "category": "Agriculture",
+    "eligibility": "All farmers including tenant farmers",
+    "state": "All India",
+    "target": "Farmers",
+    "benefits": [
+      "Credit up to Rs.3 lakh at 4%",
+      "ATM-enabled card",
+      "Crop insurance cover"
+    ],
+    "documents": [
+      "Identity proof",
+      "Land documents",
+      "Photo"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://pmkisan.gov.in"
+  },
+  {
+    "id": "soil-health",
+    "name": "Soil Health Card Scheme",
+    "description": "Provides soil health cards to farmers with crop-wise nutrient recommendations.",
+    "category": "Agriculture",
+    "eligibility": "All farmers",
+    "state": "All India",
+    "target": "Farmers",
+    "benefits": [
+      "Free soil testing",
+      "Crop-wise nutrient advice",
+      "Improved crop yields"
+    ],
+    "documents": [
+      "Land ownership proof",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://soilhealth.dac.gov.in"
+  },
+  {
+    "id": "pmksy",
+    "name": "PM Krishi Sinchai Yojana",
+    "description": "Ensures access to irrigation with \"Har Khet Ko Pani\" and promotes micro-irrigation.",
+    "category": "Agriculture",
+    "eligibility": "All farmers",
+    "state": "All India",
+    "target": "Farmers",
+    "benefits": [
+      "Micro-irrigation subsidy",
+      "Per drop more crop",
+      "Water use efficiency"
+    ],
+    "documents": [
+      "Land records",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://pmksy.gov.in"
+  },
+  {
+    "id": "enam",
+    "name": "e-NAM (National Agriculture Market)",
+    "description": "Online trading platform for agricultural commodities across India.",
+    "category": "Agriculture",
+    "eligibility": "Farmers, traders, commission agents",
+    "state": "All India",
+    "target": "Farmers",
+    "benefits": [
+      "Transparent price discovery",
+      "Online trading",
+      "Better price realization"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Bank account",
+      "Mandi license"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://enam.gov.in"
+  },
+  {
+    "id": "paramparagat",
+    "name": "Paramparagat Krishi Vikas Yojana",
+    "description": "Promotes organic farming through cluster approach with Rs.50,000/ha support.",
+    "category": "Agriculture",
+    "eligibility": "Farmers willing to adopt organic farming",
+    "state": "All India",
+    "target": "Farmers",
+    "benefits": [
+      "Rs.50,000/ha over 3 years",
+      "Organic certification",
+      "Market linkage"
+    ],
+    "documents": [
+      "Land records",
+      "Aadhaar",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://pgsindia-ncof.gov.in"
+  },
+  {
+    "id": "nfsm",
+    "name": "National Food Security Mission",
+    "description": "Increases production of rice, wheat, pulses, coarse cereals through area expansion.",
+    "category": "Agriculture",
+    "eligibility": "Farmers in identified districts",
+    "state": "All India",
+    "target": "Farmers",
+    "benefits": [
+      "Seed distribution",
+      "Farm machinery subsidy",
+      "Technology demonstration"
+    ],
+    "documents": [
+      "Land records",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://nfsm.gov.in"
+  },
+  {
+    "id": "rashtriya-krishi",
+    "name": "Rashtriya Krishi Vikas Yojana",
+    "description": "Provides financial assistance to states for agricultural development plans.",
+    "category": "Agriculture",
+    "eligibility": "State agriculture departments and farmers",
+    "state": "All India",
+    "target": "Farmers",
+    "benefits": [
+      "Infrastructure development",
+      "Agri-business support",
+      "Value chain development"
+    ],
+    "documents": [
+      "Project proposal",
+      "Land records"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://rkvy.nic.in"
+  },
+  {
+    "id": "agri-infra",
+    "name": "Agriculture Infrastructure Fund",
+    "description": "Rs.1 lakh crore financing for post-harvest management and community farming assets.",
+    "category": "Agriculture",
+    "eligibility": "Farmers, FPOs, agri-entrepreneurs",
+    "state": "All India",
+    "target": "Farmers",
+    "benefits": [
+      "3% interest subvention",
+      "Credit guarantee",
+      "Rs.2 crore per project"
+    ],
+    "documents": [
+      "Project report",
+      "Bank account",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "2025-26",
+    "sourceUrl": "https://agriinfra.dac.gov.in"
+  },
+  {
+    "id": "nsp",
+    "name": "National Scholarship Portal",
+    "description": "One-stop platform for pre-matric, post-matric, and merit-based scholarships.",
+    "category": "Education",
+    "eligibility": "Students meeting income & merit criteria",
+    "state": "All India",
+    "target": "Students",
+    "benefits": [
+      "Scholarships Rs.5,000-50,000/year",
+      "Tuition fee coverage",
+      "Direct bank transfer"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Income Certificate",
+      "Marksheet",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Feb 28, 2026",
+    "sourceUrl": "https://scholarships.gov.in"
+  },
+  {
+    "id": "pm-vidyalaxmi",
+    "name": "PM Vidyalaxmi Yojana",
+    "description": "Education loans with interest subsidy for economically weaker students in quality institutions.",
+    "category": "Education",
+    "eligibility": "Students admitted to QS-ranked institutions",
+    "state": "All India",
+    "target": "Students",
+    "benefits": [
+      "Interest subsidy on education loans",
+      "Collateral-free loans",
+      "Merit-based support"
+    ],
+    "documents": [
+      "Admission letter",
+      "Income proof",
+      "Aadhaar",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://www.vidyalakshmi.co.in"
+  },
+  {
+    "id": "midday-meal",
+    "name": "PM POSHAN (Mid-Day Meal)",
+    "description": "Free nutritious lunch to children in government schools to improve attendance and nutrition.",
+    "category": "Education",
+    "eligibility": "Students in govt/aided schools (Class 1-8)",
+    "state": "All India",
+    "target": "Students",
+    "benefits": [
+      "Free hot cooked meal",
+      "Improved nutrition",
+      "Better attendance"
+    ],
+    "documents": [
+      "School enrollment",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://mdm.nic.in"
+  },
+  {
+    "id": "sarva-shiksha",
+    "name": "Samagra Shiksha Abhiyan",
+    "description": "Integrated scheme for school education from pre-school to Class 12.",
+    "category": "Education",
+    "eligibility": "All school-going children",
+    "state": "All India",
+    "target": "Students",
+    "benefits": [
+      "Free textbooks",
+      "Uniforms",
+      "Digital education",
+      "Teacher training"
+    ],
+    "documents": [
+      "School enrollment"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://samagra.education.gov.in"
+  },
+  {
+    "id": "inspire",
+    "name": "INSPIRE Scholarship",
+    "description": "Scholarship to top 1% students pursuing natural and basic sciences at BSc/MSc level.",
+    "category": "Education",
+    "eligibility": "Top 1% students in Class 12 pursuing science",
+    "state": "All India",
+    "target": "Students",
+    "benefits": [
+      "Rs.80,000/year scholarship",
+      "Research internship",
+      "Career mentoring"
+    ],
+    "documents": [
+      "Class 12 marksheet",
+      "Admission proof",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Annual",
+    "sourceUrl": "https://online-inspire.gov.in"
+  },
+  {
+    "id": "pragati",
+    "name": "PRAGATI Scholarship for Girls",
+    "description": "AICTE scholarship for girl students in technical education programs.",
+    "category": "Education",
+    "eligibility": "Girl students in AICTE-approved institutions",
+    "state": "All India",
+    "target": "Students",
+    "benefits": [
+      "Rs.50,000/year",
+      "Incidental charges covered",
+      "Merit-cum-means based"
+    ],
+    "documents": [
+      "Admission letter",
+      "Income certificate",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Annual",
+    "sourceUrl": "https://www.aicte-india.org"
+  },
+  {
+    "id": "ishan-uday",
+    "name": "Ishan Uday Scholarship (NE Region)",
+    "description": "Scholarship for students from North-Eastern states pursuing higher education.",
+    "category": "Education",
+    "eligibility": "Students from NE states in higher education",
+    "state": "All India",
+    "target": "Students",
+    "benefits": [
+      "Rs.5,400/month (general)",
+      "Rs.7,800/month (technical)",
+      "4-year duration"
+    ],
+    "documents": [
+      "Domicile certificate",
+      "Admission proof",
+      "Income certificate"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Annual",
+    "sourceUrl": "https://scholarships.gov.in"
+  },
+  {
+    "id": "beti-bachao",
+    "name": "Beti Bachao Beti Padhao",
+    "description": "Campaign for survival, protection, and education of the girl child.",
+    "category": "Education",
+    "eligibility": "Girl children across India",
+    "state": "All India",
+    "target": "Students",
+    "benefits": [
+      "Awareness campaigns",
+      "Improved girl child ratio",
+      "Education support"
+    ],
+    "documents": [
+      "Birth certificate",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://wcd.nic.in"
+  },
+  {
+    "id": "pmjay",
+    "name": "Ayushman Bharat - PMJAY",
+    "description": "Health cover of Rs.5 lakh/family/year for hospitalization covering 1,500+ procedures.",
+    "category": "Healthcare",
+    "eligibility": "Bottom 40% population (SECC data)",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "Rs.5 lakh health cover",
+      "Cashless treatment",
+      "1,500+ procedures covered"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Ration Card",
+      "SECC proof"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://pmjay.gov.in"
+  },
+  {
+    "id": "pmmvy",
+    "name": "PM Matru Vandana Yojana",
+    "description": "Rs.5,000 maternity benefit for pregnant women for first living child.",
+    "category": "Healthcare",
+    "eligibility": "Pregnant women for first child",
+    "state": "All India",
+    "target": "Women",
+    "benefits": [
+      "Rs.5,000 in 3 installments",
+      "Nutrition support",
+      "Wage loss compensation"
+    ],
+    "documents": [
+      "Aadhaar",
+      "MCP Card",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://pmmvy.wcd.gov.in"
+  },
+  {
+    "id": "janaushadhi",
+    "name": "PM Bhartiya Janaushadhi Pariyojana",
+    "description": "Quality generic medicines at 50-90% less price through Janaushadhi Kendras.",
+    "category": "Healthcare",
+    "eligibility": "All citizens",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "Medicines at 50-90% discount",
+      "9,000+ stores",
+      "1,900+ medicines"
+    ],
+    "documents": [
+      "None required"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://janaushadhi.gov.in"
+  },
+  {
+    "id": "ayushman-bhav",
+    "name": "Ayushman Bharat Health Account",
+    "description": "Digital health records and unique health ID for every citizen.",
+    "category": "Healthcare",
+    "eligibility": "All Indian citizens",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "Unique Health ID",
+      "Digital health records",
+      "Easy medical history access"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Mobile number"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://healthid.ndhm.gov.in"
+  },
+  {
+    "id": "mission-indradhanush",
+    "name": "Mission Indradhanush",
+    "description": "Full immunization of children and pregnant women against vaccine-preventable diseases.",
+    "category": "Healthcare",
+    "eligibility": "Children under 2 and pregnant women",
+    "state": "All India",
+    "target": "Women",
+    "benefits": [
+      "Free vaccination",
+      "12 vaccine-preventable diseases",
+      "Door-to-door coverage"
+    ],
+    "documents": [
+      "Birth certificate",
+      "MCP card"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://nhm.gov.in"
+  },
+  {
+    "id": "rashtriya-swasthya",
+    "name": "Rashtriya Swasthya Bima Yojana",
+    "description": "Health insurance for BPL families with cashless treatment up to Rs.30,000.",
+    "category": "Healthcare",
+    "eligibility": "BPL families",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "Rs.30,000 health cover",
+      "Cashless treatment",
+      "Smart card based"
+    ],
+    "documents": [
+      "BPL card",
+      "Aadhaar",
+      "Family photo"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://www.rsby.gov.in"
+  },
+  {
+    "id": "mudra",
+    "name": "PM MUDRA Yojana",
+    "description": "Collateral-free loans up to Rs.10 lakh for micro enterprises in three categories.",
+    "category": "Business",
+    "eligibility": "Non-corporate small enterprises",
+    "state": "All India",
+    "target": "Entrepreneurs",
+    "benefits": [
+      "Loans up to Rs.10 lakh",
+      "No collateral",
+      "Three categories: Shishu/Kishore/Tarun"
+    ],
+    "documents": [
+      "Business plan",
+      "Identity proof",
+      "Address proof"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://www.mudra.org.in"
+  },
+  {
+    "id": "startup-seed",
+    "name": "Startup India Seed Fund",
+    "description": "Financial assistance up to Rs.50 lakh for DPIIT-recognized startups.",
+    "category": "Business",
+    "eligibility": "DPIIT-recognized startups within 2 years",
+    "state": "All India",
+    "target": "Startups",
+    "benefits": [
+      "Grant up to Rs.20 lakh",
+      "Debt up to Rs.50 lakh",
+      "Incubator support"
+    ],
+    "documents": [
+      "DPIIT certificate",
+      "Business plan",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://seedfund.startupindia.gov.in"
+  },
+  {
+    "id": "standup",
+    "name": "Stand-Up India",
+    "description": "Bank loans Rs.10 lakh to Rs.1 crore for SC/ST and women entrepreneurs.",
+    "category": "Business",
+    "eligibility": "SC/ST or women entrepreneurs",
+    "state": "All India",
+    "target": "Entrepreneurs",
+    "benefits": [
+      "Loans Rs.10L-1Cr",
+      "Up to 75% project cost",
+      "7 year repayment"
+    ],
+    "documents": [
+      "Caste certificate",
+      "Project report",
+      "Business plan"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://www.standupmitra.in"
+  },
+  {
+    "id": "pmegp",
+    "name": "PM Employment Generation Programme",
+    "description": "Credit-linked subsidy 15-35% for micro-enterprises, max Rs.50 lakh manufacturing.",
+    "category": "Business",
+    "eligibility": "Individuals above 18 years",
+    "state": "All India",
+    "target": "Entrepreneurs",
+    "benefits": [
+      "15-35% subsidy",
+      "Rs.50L manufacturing",
+      "Rs.20L service sector"
+    ],
+    "documents": [
+      "Project report",
+      "Education certificates",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://www.kviconline.gov.in"
+  },
+  {
+    "id": "svanidhi",
+    "name": "PM SVANidhi",
+    "description": "Working capital loans up to Rs.50,000 for street vendors with 7% interest subsidy.",
+    "category": "Business",
+    "eligibility": "Street vendors with vending certificate",
+    "state": "All India",
+    "target": "Entrepreneurs",
+    "benefits": [
+      "Loans up to Rs.50,000",
+      "7% interest subsidy",
+      "Digital transaction cashback"
+    ],
+    "documents": [
+      "Vending certificate",
+      "Aadhaar",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Dec 2026",
+    "sourceUrl": "https://pmsvanidhi.mohua.gov.in"
+  },
+  {
+    "id": "msme-champion",
+    "name": "MSME CHAMPION Portal",
+    "description": "Single window for MSME grievances, information, and handholding support.",
+    "category": "Business",
+    "eligibility": "All MSMEs",
+    "state": "All India",
+    "target": "MSMEs",
+    "benefits": [
+      "Grievance resolution",
+      "Information hub",
+      "Handholding support"
+    ],
+    "documents": [
+      "Udyam registration"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://champion.gov.in"
+  },
+  {
+    "id": "cgtsme",
+    "name": "Credit Guarantee for MSMEs",
+    "description": "Collateral-free credit guarantee up to Rs.5 crore for MSMEs.",
+    "category": "Business",
+    "eligibility": "New and existing MSMEs",
+    "state": "All India",
+    "target": "MSMEs",
+    "benefits": [
+      "Collateral-free guarantee",
+      "Up to Rs.5 crore",
+      "85% guarantee cover"
+    ],
+    "documents": [
+      "Business registration",
+      "Bank account",
+      "Financial statements"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://www.cgtmse.in"
+  },
+  {
+    "id": "zed-cert",
+    "name": "ZED Certification for MSMEs",
+    "description": "Zero Defect Zero Effect certification with subsidized testing and consultancy.",
+    "category": "Business",
+    "eligibility": "All MSMEs",
+    "state": "All India",
+    "target": "MSMEs",
+    "benefits": [
+      "Quality certification",
+      "Subsidized testing",
+      "Market access"
+    ],
+    "documents": [
+      "Udyam registration",
+      "GST registration"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://zed.msme.gov.in"
+  },
+  {
+    "id": "pmay-urban",
+    "name": "PM Awas Yojana (Urban)",
+    "description": "Affordable housing with interest subsidy of 6.5% on home loans for urban poor.",
+    "category": "Housing",
+    "eligibility": "EWS/LIG without pucca house",
+    "state": "All India",
+    "target": "Urban Poor",
+    "benefits": [
+      "6.5% interest subsidy",
+      "Rs.2.67 lakh subsidy",
+      "Housing for all"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Income certificate",
+      "No-home certificate"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Dec 2026",
+    "sourceUrl": "https://pmaymis.gov.in"
+  },
+  {
+    "id": "pmay-gramin",
+    "name": "PM Awas Yojana (Gramin)",
+    "description": "Financial assistance of Rs.1.20-1.30 lakh for construction of pucca houses in rural areas.",
+    "category": "Housing",
+    "eligibility": "Houseless/kutcha house rural families",
+    "state": "All India",
+    "target": "Rural",
+    "benefits": [
+      "Rs.1.20-1.30 lakh assistance",
+      "Toilet construction included",
+      "90 days MGNREGA wages"
+    ],
+    "documents": [
+      "Aadhaar",
+      "SECC data inclusion",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Dec 2026",
+    "sourceUrl": "https://pmayg.nic.in"
+  },
+  {
+    "id": "svamitva",
+    "name": "SVAMITVA Scheme",
+    "description": "Property cards for rural households using drone surveys for financial empowerment.",
+    "category": "Housing",
+    "eligibility": "Rural property owners",
+    "state": "All India",
+    "target": "Rural",
+    "benefits": [
+      "Legal property cards",
+      "Loan collateral",
+      "Dispute reduction"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Village records"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://svamitva.nic.in"
+  },
+  {
+    "id": "nrega",
+    "name": "MGNREGA",
+    "description": "100 days guaranteed wage employment per year to rural households for unskilled manual work.",
+    "category": "Social Welfare",
+    "eligibility": "Adult members of rural households",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "100 days guaranteed work",
+      "Minimum wages",
+      "Unemployment allowance"
+    ],
+    "documents": [
+      "Job card",
+      "Aadhaar",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://nrega.nic.in"
+  },
+  {
+    "id": "nsap",
+    "name": "National Social Assistance Programme",
+    "description": "Pension and assistance for elderly, widows, and disabled persons of BPL families.",
+    "category": "Social Welfare",
+    "eligibility": "BPL elderly (60+), widows, disabled",
+    "state": "All India",
+    "target": "Senior Citizens",
+    "benefits": [
+      "Monthly pension Rs.200-500",
+      "Death benefit Rs.20,000",
+      "Disability assistance"
+    ],
+    "documents": [
+      "Age proof",
+      "BPL card",
+      "Aadhaar",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://nsap.nic.in"
+  },
+  {
+    "id": "ujjwala",
+    "name": "PM Ujjwala Yojana",
+    "description": "Free LPG connections for women from BPL households to ensure clean cooking fuel.",
+    "category": "Social Welfare",
+    "eligibility": "Women from BPL households",
+    "state": "All India",
+    "target": "Women",
+    "benefits": [
+      "Free LPG connection",
+      "First refill free",
+      "EMI for stove"
+    ],
+    "documents": [
+      "Aadhaar",
+      "BPL card",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://www.pmujjwalayojana.com"
+  },
+  {
+    "id": "pmgky-anna",
+    "name": "PM Garib Kalyan Anna Yojana",
+    "description": "Free foodgrains (5kg/person/month) to priority households and Antyodaya families.",
+    "category": "Food & Distribution",
+    "eligibility": "NFSA beneficiary households",
+    "state": "All India",
+    "target": "BPL Families",
+    "benefits": [
+      "5kg free foodgrains/person/month",
+      "Additional to regular PDS",
+      "Rice, wheat, coarse grains"
+    ],
+    "documents": [
+      "Ration card",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Dec 2028",
+    "sourceUrl": "https://dfpd.gov.in"
+  },
+  {
+    "id": "one-nation-ration",
+    "name": "One Nation One Ration Card",
+    "description": "Portability of ration card benefits allowing purchase from any FPS across India.",
+    "category": "Food & Distribution",
+    "eligibility": "All ration card holders",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "Ration portability",
+      "Any FPS in India",
+      "Aadhaar-based authentication"
+    ],
+    "documents": [
+      "Ration card",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://impds.nic.in"
+  },
+  {
+    "id": "pmkvy",
+    "name": "PM Kaushal Vikas Yojana",
+    "description": "Free short-term skill training (150-300 hours) with certification and placement support.",
+    "category": "Skill Development",
+    "eligibility": "Class 10 dropouts or unemployed",
+    "state": "All India",
+    "target": "Youth",
+    "benefits": [
+      "Free skill training",
+      "Government certification",
+      "Placement support"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Education certificates",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://www.pmkvyofficial.org"
+  },
+  {
+    "id": "vishwakarma",
+    "name": "PM Vishwakarma Yojana",
+    "description": "Support for traditional artisans with skill training, toolkit incentive, and credit up to Rs.3 lakh.",
+    "category": "Skill Development",
+    "eligibility": "Traditional artisans and craftspeople",
+    "state": "All India",
+    "target": "Workers",
+    "benefits": [
+      "Rs.15,000 toolkit incentive",
+      "Credit up to Rs.3 lakh at 5%",
+      "Skill training"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Trade proof",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Mar 31, 2026",
+    "sourceUrl": "https://pmvishwakarma.gov.in"
+  },
+  {
+    "id": "ddugky",
+    "name": "DDU Grameen Kaushalya Yojana",
+    "description": "Placement-linked skill training for rural youth aged 15-35 from poor families.",
+    "category": "Skill Development",
+    "eligibility": "Rural youth (15-35) from poor families",
+    "state": "All India",
+    "target": "Youth",
+    "benefits": [
+      "Free residential training",
+      "Placement guarantee",
+      "Post-placement support"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Income certificate",
+      "Age proof"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://ddugky.gov.in"
+  },
+  {
+    "id": "naps",
+    "name": "National Apprenticeship Promotion",
+    "description": "Stipend support for apprentices in establishments with direct industry exposure.",
+    "category": "Skill Development",
+    "eligibility": "Youth aged 14+ with minimum education",
+    "state": "All India",
+    "target": "Youth",
+    "benefits": [
+      "Monthly stipend",
+      "Industry exposure",
+      "25% govt contribution to stipend"
+    ],
+    "documents": [
+      "Education certificates",
+      "Aadhaar",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://apprenticeshipindia.gov.in"
+  },
+  {
+    "id": "apy",
+    "name": "Atal Pension Yojana",
+    "description": "Guaranteed pension of Rs.1,000-5,000/month after 60, with government co-contribution.",
+    "category": "Pension & Insurance",
+    "eligibility": "Indian citizens aged 18-40",
+    "state": "All India",
+    "target": "Workers",
+    "benefits": [
+      "Guaranteed pension Rs.1,000-5,000",
+      "50% govt co-contribution",
+      "Tax benefits under 80CCD"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Bank account",
+      "Mobile number"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Enroll before 40",
+    "sourceUrl": "https://www.npscra.nsdl.co.in"
+  },
+  {
+    "id": "nps",
+    "name": "National Pension System",
+    "description": "Voluntary retirement savings with market-linked returns and tax benefits up to Rs.2 lakh.",
+    "category": "Pension & Insurance",
+    "eligibility": "Indian citizens aged 18-70",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "Tax deduction up to Rs.2 lakh",
+      "Market-linked returns",
+      "Flexible contribution"
+    ],
+    "documents": [
+      "PAN Card",
+      "Aadhaar",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Enroll before 70",
+    "sourceUrl": "https://www.npscra.nsdl.co.in"
+  },
+  {
+    "id": "pmsby",
+    "name": "PM Suraksha Bima Yojana",
+    "description": "Accident insurance of Rs.2 lakh at just Rs.20/year premium for bank account holders.",
+    "category": "Pension & Insurance",
+    "eligibility": "Bank account holders aged 18-70",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "Rs.2 lakh accidental death cover",
+      "Rs.1 lakh partial disability",
+      "Only Rs.20/year premium"
+    ],
+    "documents": [
+      "Bank account",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://jansuraksha.gov.in"
+  },
+  {
+    "id": "pmjjby",
+    "name": "PM Jeevan Jyoti Bima Yojana",
+    "description": "Life insurance of Rs.2 lakh at Rs.436/year premium for bank account holders.",
+    "category": "Pension & Insurance",
+    "eligibility": "Bank account holders aged 18-50",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "Rs.2 lakh life cover",
+      "Only Rs.436/year",
+      "Auto-debit from bank"
+    ],
+    "documents": [
+      "Bank account",
+      "Aadhaar",
+      "Nominee details"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://jansuraksha.gov.in"
+  },
+  {
+    "id": "jan-dhan",
+    "name": "PM Jan Dhan Yojana",
+    "description": "Zero balance bank account with RuPay card, Rs.2 lakh accident insurance, and overdraft.",
+    "category": "Banking & Finance",
+    "eligibility": "Unbanked Indian citizens",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "Zero balance account",
+      "Rs.2 lakh accident insurance",
+      "Rs.10,000 overdraft",
+      "RuPay debit card"
+    ],
+    "documents": [
+      "Aadhaar or any ID proof",
+      "Photo"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://pmjdy.gov.in"
+  },
+  {
+    "id": "sukanya",
+    "name": "Sukanya Samriddhi Yojana",
+    "description": "Savings scheme for girl child with 8.2% interest and tax-free maturity.",
+    "category": "Banking & Finance",
+    "eligibility": "Parents of girl child below 10 years",
+    "state": "All India",
+    "target": "Students",
+    "benefits": [
+      "8.2% interest rate",
+      "Tax free under 80C",
+      "Partial withdrawal at 18"
+    ],
+    "documents": [
+      "Birth certificate",
+      "Parent ID",
+      "Address proof"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Before girl turns 10",
+    "sourceUrl": "https://www.nsiindia.gov.in"
+  },
+  {
+    "id": "kusum",
+    "name": "PM-KUSUM Solar Scheme",
+    "description": "Solar pumps and grid-connected solar for farmers with 60% subsidy.",
+    "category": "Energy",
+    "eligibility": "All farmers",
+    "state": "All India",
+    "target": "Farmers",
+    "benefits": [
+      "60% subsidy on solar pumps",
+      "Grid-connected solar income",
+      "Reduced electricity bills"
+    ],
+    "documents": [
+      "Land records",
+      "Aadhaar",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://mnre.gov.in/kusum"
+  },
+  {
+    "id": "rooftop-solar",
+    "name": "Rooftop Solar Scheme",
+    "description": "Subsidy for rooftop solar panels installation for residential consumers.",
+    "category": "Energy",
+    "eligibility": "Residential electricity consumers",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "Up to 40% subsidy",
+      "Reduced electricity bills",
+      "Net metering income"
+    ],
+    "documents": [
+      "Electricity bill",
+      "Property proof",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://solarrooftop.gov.in"
+  },
+  {
+    "id": "saubhagya",
+    "name": "Saubhagya Scheme",
+    "description": "Free electricity connections to all remaining un-electrified households.",
+    "category": "Energy",
+    "eligibility": "Un-electrified rural/urban households",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "Free electricity connection",
+      "LED bulb included",
+      "Battery bank for remote areas"
+    ],
+    "documents": [
+      "Identity proof",
+      "Address proof"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://saubhagya.gov.in"
+  },
+  {
+    "id": "pmgdisha",
+    "name": "PM Gramin Digital Saksharta Abhiyan",
+    "description": "Free digital literacy training covering smartphones, internet, and e-governance.",
+    "category": "Digital India",
+    "eligibility": "One member per rural household (14-60 yrs)",
+    "state": "All India",
+    "target": "Rural",
+    "benefits": [
+      "Free 20-hour training",
+      "Government certification",
+      "Digital payment training"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Age proof"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Mar 2026",
+    "sourceUrl": "https://www.pmgdisha.in"
+  },
+  {
+    "id": "digilocker",
+    "name": "DigiLocker",
+    "description": "Cloud-based platform for issuance and verification of government documents.",
+    "category": "Digital India",
+    "eligibility": "All Indian citizens with Aadhaar",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "Digital document storage",
+      "Government-verified documents",
+      "Reduce physical documents"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Mobile number"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://digilocker.gov.in"
+  },
+  {
+    "id": "umang",
+    "name": "UMANG App",
+    "description": "Unified mobile app for accessing 1,200+ government services across departments.",
+    "category": "Digital India",
+    "eligibility": "All citizens",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "1,200+ govt services",
+      "Single app access",
+      "Bill payments and tracking"
+    ],
+    "documents": [
+      "Mobile number"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://web.umang.gov.in"
+  },
+  {
+    "id": "pmgsy",
+    "name": "PM Gram Sadak Yojana",
+    "description": "All-weather road connectivity to unconnected eligible rural habitations.",
+    "category": "Rural Development",
+    "eligibility": "Unconnected rural habitations",
+    "state": "All India",
+    "target": "Rural",
+    "benefits": [
+      "All-weather road connectivity",
+      "Bridge construction",
+      "Road upgradation"
+    ],
+    "documents": [
+      "Village records"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://pmgsy.nic.in"
+  },
+  {
+    "id": "swachh-bharat",
+    "name": "Swachh Bharat Mission (Gramin)",
+    "description": "Individual household latrines and ODF sustainability in rural India.",
+    "category": "Rural Development",
+    "eligibility": "Rural households without toilets",
+    "state": "All India",
+    "target": "Rural",
+    "benefits": [
+      "Rs.12,000 for toilet construction",
+      "ODF community incentive",
+      "Waste management"
+    ],
+    "documents": [
+      "Aadhaar",
+      "BPL card"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://swachhbharatmission.gov.in"
+  },
+  {
+    "id": "jal-jeevan",
+    "name": "Jal Jeevan Mission",
+    "description": "Functional household tap water connections (55 lpcd) to every rural household.",
+    "category": "Rural Development",
+    "eligibility": "All rural households",
+    "state": "All India",
+    "target": "Rural",
+    "benefits": [
+      "Household tap water connection",
+      "55 litres per capita per day",
+      "Water quality testing"
+    ],
+    "documents": [
+      "Household survey inclusion"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "2026",
+    "sourceUrl": "https://jaljeevanmission.gov.in"
+  },
+  {
+    "id": "deen-dayal",
+    "name": "Deen Dayal Upadhyaya Gram Jyoti",
+    "description": "Rural electrification through separation of agricultural and domestic feeders.",
+    "category": "Rural Development",
+    "eligibility": "Rural areas",
+    "state": "All India",
+    "target": "Rural",
+    "benefits": [
+      "24x7 rural power supply",
+      "Agricultural feeder separation",
+      "Smart metering"
+    ],
+    "documents": [
+      "Village records"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://www.ddugjy.gov.in"
+  },
+  {
+    "id": "fame-ii",
+    "name": "FAME-II (Electric Vehicles)",
+    "description": "Subsidies for purchase of electric vehicles to reduce pollution and oil dependency.",
+    "category": "Transport",
+    "eligibility": "EV buyers (2W, 3W, 4W, buses)",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "Electric 2W subsidy",
+      "Electric bus procurement",
+      "Charging infrastructure"
+    ],
+    "documents": [
+      "Vehicle purchase invoice",
+      "Aadhaar",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Mar 2026",
+    "sourceUrl": "https://fame2.heavyindustries.gov.in"
+  },
+  {
+    "id": "pm-ebike",
+    "name": "PM E-DRIVE Scheme",
+    "description": "Subsidy for electric two-wheelers and three-wheelers for clean mobility.",
+    "category": "Transport",
+    "eligibility": "Electric vehicle buyers",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "Subsidy on e-2W/3W",
+      "Reduced pollution",
+      "Lower operating cost"
+    ],
+    "documents": [
+      "Purchase invoice",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "2026",
+    "sourceUrl": "https://heavyindustries.gov.in"
+  },
+  {
+    "id": "epfo",
+    "name": "Employees Provident Fund",
+    "description": "Mandatory provident fund savings for employees with employer contribution.",
+    "category": "Labour & Employment",
+    "eligibility": "Employees earning up to Rs.15,000/month",
+    "state": "All India",
+    "target": "Workers",
+    "benefits": [
+      "12% employer contribution",
+      "Pension benefit",
+      "Insurance cover"
+    ],
+    "documents": [
+      "Aadhaar",
+      "PAN",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://www.epfindia.gov.in"
+  },
+  {
+    "id": "esic",
+    "name": "Employees State Insurance",
+    "description": "Health insurance and social security for workers earning up to Rs.21,000/month.",
+    "category": "Labour & Employment",
+    "eligibility": "Workers in covered establishments",
+    "state": "All India",
+    "target": "Workers",
+    "benefits": [
+      "Medical benefits",
+      "Sickness allowance",
+      "Maternity benefit",
+      "Disability pension"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Employment proof",
+      "Photo"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://www.esic.gov.in"
+  },
+  {
+    "id": "eshram",
+    "name": "e-Shram Portal",
+    "description": "National database for unorganized workers with Rs.2 lakh accident insurance.",
+    "category": "Labour & Employment",
+    "eligibility": "Unorganized sector workers",
+    "state": "All India",
+    "target": "Workers",
+    "benefits": [
+      "e-Shram card",
+      "Rs.2 lakh accident insurance",
+      "Social security benefits"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Mobile number",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://eshram.gov.in"
+  },
+  {
+    "id": "one-stop",
+    "name": "One Stop Centre (Sakhi)",
+    "description": "Integrated support for women affected by violence with shelter, legal aid, counselling.",
+    "category": "Women & Child",
+    "eligibility": "Women affected by violence (all ages)",
+    "state": "All India",
+    "target": "Women",
+    "benefits": [
+      "24/7 support",
+      "Medical assistance",
+      "Legal aid",
+      "Temporary shelter"
+    ],
+    "documents": [
+      "None required for emergency"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://wcd.nic.in"
+  },
+  {
+    "id": "mahila-shakti",
+    "name": "Mahila Shakti Kendra",
+    "description": "Community engagement through student volunteers for rural women empowerment.",
+    "category": "Women & Child",
+    "eligibility": "Rural women",
+    "state": "All India",
+    "target": "Women",
+    "benefits": [
+      "Skill development",
+      "Digital literacy",
+      "Health awareness"
+    ],
+    "documents": [
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://wcd.nic.in"
+  },
+  {
+    "id": "icds",
+    "name": "Integrated Child Development Services",
+    "description": "Supplementary nutrition, immunization, health checkup, and pre-school education for children.",
+    "category": "Women & Child",
+    "eligibility": "Children 0-6 years, pregnant women",
+    "state": "All India",
+    "target": "Children",
+    "benefits": [
+      "Supplementary nutrition",
+      "Immunization",
+      "Pre-school education",
+      "Health checkup"
+    ],
+    "documents": [
+      "Birth certificate",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://icds-wcd.nic.in"
+  },
+  {
+    "id": "kishore",
+    "name": "KVPY/INSPIRE Fellowship",
+    "description": "Fellowship for pursuing research in basic sciences at BSc to PhD level.",
+    "category": "Science & Technology",
+    "eligibility": "Students in basic sciences",
+    "state": "All India",
+    "target": "Students",
+    "benefits": [
+      "Monthly fellowship",
+      "Annual contingency grant",
+      "Research support"
+    ],
+    "documents": [
+      "Academic records",
+      "Research proposal"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Annual",
+    "sourceUrl": "https://online-inspire.gov.in"
+  },
+  {
+    "id": "serb-funding",
+    "name": "SERB Research Grants",
+    "description": "Funding for scientific research projects across all disciplines.",
+    "category": "Science & Technology",
+    "eligibility": "PhD holders in academic/research institutions",
+    "state": "All India",
+    "target": "Researchers",
+    "benefits": [
+      "Research project funding",
+      "Equipment grants",
+      "Travel support"
+    ],
+    "documents": [
+      "PhD certificate",
+      "Research proposal",
+      "Institutional support"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Rolling",
+    "sourceUrl": "https://www.serb.gov.in"
+  },
+  {
+    "id": "namami-gange",
+    "name": "Namami Gange Mission",
+    "description": "Comprehensive mission for Ganga rejuvenation with pollution abatement and conservation.",
+    "category": "Environment",
+    "eligibility": "Projects along Ganga basin",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "River cleaning",
+      "Sewage treatment",
+      "Biodiversity conservation"
+    ],
+    "documents": [
+      "Project proposal"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://nmcg.nic.in"
+  },
+  {
+    "id": "green-india",
+    "name": "Green India Mission",
+    "description": "Afforestation and restoration of degraded forests and ecosystems.",
+    "category": "Environment",
+    "eligibility": "Forest-fringe communities",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "Forest restoration",
+      "Livelihood support",
+      "Carbon sequestration"
+    ],
+    "documents": [
+      "Community registration"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://moef.gov.in"
+  },
+  {
+    "id": "khelo-india",
+    "name": "Khelo India Programme",
+    "description": "Annual national-level sports competition with scholarships for talented athletes.",
+    "category": "Sports & Youth",
+    "eligibility": "Athletes under 17/21 years",
+    "state": "All India",
+    "target": "Athletes",
+    "benefits": [
+      "Rs.5 lakh/year scholarship",
+      "8-year support",
+      "Training and coaching"
+    ],
+    "documents": [
+      "Sports federation ID",
+      "Age proof",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Annual",
+    "sourceUrl": "https://kheloindia.gov.in"
+  },
+  {
+    "id": "target-olympic",
+    "name": "Target Olympic Podium Scheme",
+    "description": "Financial support to potential Olympic medal winners with world-class training.",
+    "category": "Sports & Youth",
+    "eligibility": "Elite athletes with medal potential",
+    "state": "All India",
+    "target": "Athletes",
+    "benefits": [
+      "Monthly allowance",
+      "International training",
+      "Equipment support"
+    ],
+    "documents": [
+      "Sports achievements",
+      "Federation nomination"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://yas.nic.in"
+  },
+  {
+    "id": "nsdf",
+    "name": "National Sports Development Fund",
+    "description": "Financial assistance to sportspersons for training, equipment, and competition.",
+    "category": "Sports & Youth",
+    "eligibility": "National-level sportspersons",
+    "state": "All India",
+    "target": "Athletes",
+    "benefits": [
+      "Training support",
+      "Equipment",
+      "Competition travel"
+    ],
+    "documents": [
+      "Sports achievements",
+      "Federation certificate"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://yas.nic.in"
+  },
+  {
+    "id": "agniveer",
+    "name": "Agnipath Scheme",
+    "description": "Short-term military recruitment for youth aged 17.5-23 with Seva Nidhi package.",
+    "category": "Defence & Veterans",
+    "eligibility": "Youth aged 17.5-23 years",
+    "state": "All India",
+    "target": "Defence Personnel",
+    "benefits": [
+      "4-year military service",
+      "Rs.11.71 lakh Seva Nidhi",
+      "Skill certification"
+    ],
+    "documents": [
+      "Education certificates",
+      "Age proof",
+      "Medical fitness"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Annual recruitment",
+    "sourceUrl": "https://www.joinindianarmy.nic.in"
+  },
+  {
+    "id": "echs",
+    "name": "Ex-Servicemen Health Scheme",
+    "description": "Medical treatment for ex-servicemen and dependents at empaneled hospitals.",
+    "category": "Defence & Veterans",
+    "eligibility": "Ex-servicemen and dependents",
+    "state": "All India",
+    "target": "Ex-Servicemen",
+    "benefits": [
+      "Free medical treatment",
+      "Empaneled hospitals",
+      "Cashless treatment"
+    ],
+    "documents": [
+      "Discharge book",
+      "ECHS card",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://echs.gov.in"
+  },
+  {
+    "id": "pmmsy",
+    "name": "PM Matsya Sampada Yojana",
+    "description": "Rs.20,050 crore scheme for sustainable fisheries development and infrastructure.",
+    "category": "Fisheries",
+    "eligibility": "Fishermen, fish farmers, entrepreneurs",
+    "state": "All India",
+    "target": "Fishermen",
+    "benefits": [
+      "60% subsidy for SC/ST/women",
+      "40% subsidy for others",
+      "Insurance cover",
+      "Infrastructure support"
+    ],
+    "documents": [
+      "Fishing license",
+      "Aadhaar",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "2024-25",
+    "sourceUrl": "https://pmmsy.dof.gov.in"
+  },
+  {
+    "id": "kcc-fisheries",
+    "name": "KCC for Fisheries & Animal Husbandry",
+    "description": "Kisan Credit Card extended to fisheries and animal husbandry sector.",
+    "category": "Fisheries",
+    "eligibility": "Fish farmers and animal husbandry farmers",
+    "state": "All India",
+    "target": "Fishermen",
+    "benefits": [
+      "Credit at 4% interest",
+      "Working capital support",
+      "Insurance cover"
+    ],
+    "documents": [
+      "Activity proof",
+      "Aadhaar",
+      "Bank account"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://pmkisan.gov.in"
+  },
+  {
+    "id": "samarth",
+    "name": "SAMARTH (Textile Sector Skill)",
+    "description": "Skill development in textiles covering spinning, weaving, processing, garmenting.",
+    "category": "Textiles",
+    "eligibility": "Youth interested in textile sector",
+    "state": "All India",
+    "target": "Workers",
+    "benefits": [
+      "Free skill training",
+      "Placement support",
+      "Government certification"
+    ],
+    "documents": [
+      "Aadhaar",
+      "Education proof"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://samarth-textiles.gov.in"
+  },
+  {
+    "id": "powertex",
+    "name": "PowerTex India",
+    "description": "Comprehensive scheme for powerloom sector with group workshed and yarn bank.",
+    "category": "Textiles",
+    "eligibility": "Powerloom workers and weavers",
+    "state": "All India",
+    "target": "Workers",
+    "benefits": [
+      "Common facility centre",
+      "Yarn at mill price",
+      "Solar energy support"
+    ],
+    "documents": [
+      "Weaver ID",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://texmin.nic.in"
+  },
+  {
+    "id": "van-dhan",
+    "name": "Van Dhan Vikas Kendra",
+    "description": "Value addition to minor forest produce by tribals through Van Dhan Kendras.",
+    "category": "Tribal Welfare",
+    "eligibility": "Tribal gatherers of forest produce",
+    "state": "All India",
+    "target": "Tribal",
+    "benefits": [
+      "Value addition training",
+      "Market linkage",
+      "SHG formation"
+    ],
+    "documents": [
+      "Tribal certificate",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://trifed.tribal.gov.in"
+  },
+  {
+    "id": "eklavya",
+    "name": "Eklavya Model Residential School",
+    "description": "Quality residential schools for tribal students in remote areas.",
+    "category": "Tribal Welfare",
+    "eligibility": "Tribal students in scheduled areas",
+    "state": "All India",
+    "target": "Tribal",
+    "benefits": [
+      "Free residential education",
+      "Quality teachers",
+      "Hostel facilities"
+    ],
+    "documents": [
+      "Tribal certificate",
+      "Age proof",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://tribal.nic.in"
+  },
+  {
+    "id": "nmdfc",
+    "name": "NMDFC Loan Schemes",
+    "description": "Concessional loans for economic activities of minorities through channelizing agencies.",
+    "category": "Minority Affairs",
+    "eligibility": "Minorities with income below Rs.6 lakh",
+    "state": "All India",
+    "target": "Minorities",
+    "benefits": [
+      "Concessional loans",
+      "Education loans",
+      "Vocational training"
+    ],
+    "documents": [
+      "Minority certificate",
+      "Income proof",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://nmdfc.org"
+  },
+  {
+    "id": "seekho-hunar",
+    "name": "Seekho Aur Kamao",
+    "description": "Skill development for minority youth with placement and follow-up.",
+    "category": "Minority Affairs",
+    "eligibility": "Minority youth aged 14-35",
+    "state": "All India",
+    "target": "Minorities",
+    "benefits": [
+      "Free skill training",
+      "Stipend during training",
+      "Placement support"
+    ],
+    "documents": [
+      "Minority certificate",
+      "Age proof",
+      "Aadhaar"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://minorityaffairs.gov.in"
+  },
+  {
+    "id": "maulana-azad",
+    "name": "Maulana Azad Fellowship",
+    "description": "Research fellowship for MPhil/PhD scholars from minority communities.",
+    "category": "Minority Affairs",
+    "eligibility": "MPhil/PhD minority students",
+    "state": "All India",
+    "target": "Minorities",
+    "benefits": [
+      "Monthly fellowship",
+      "Contingency grant",
+      "Research support"
+    ],
+    "documents": [
+      "Minority certificate",
+      "NET/JRF qualification",
+      "Admission proof"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Annual",
+    "sourceUrl": "https://minorityaffairs.gov.in"
+  },
+  {
+    "id": "smart-city",
+    "name": "Smart Cities Mission",
+    "description": "100 smart cities with advanced infrastructure, technology, and sustainable development.",
+    "category": "Urban Development",
+    "eligibility": "Selected 100 cities",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "Smart infrastructure",
+      "Digital governance",
+      "Sustainable development"
+    ],
+    "documents": [
+      "City-level project proposals"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "2026",
+    "sourceUrl": "https://smartcities.gov.in"
+  },
+  {
+    "id": "amrut",
+    "name": "AMRUT 2.0",
+    "description": "Water supply and sewerage infrastructure in 500 cities with water security.",
+    "category": "Urban Development",
+    "eligibility": "All statutory towns",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "100% water supply coverage",
+      "Sewerage and septage management",
+      "Rejuvenation of water bodies"
+    ],
+    "documents": [
+      "City-level proposals"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "2026",
+    "sourceUrl": "https://amrut.gov.in"
+  },
+  {
+    "id": "swachh-urban",
+    "name": "Swachh Bharat Mission (Urban)",
+    "description": "ODF++ and waste management in all urban areas.",
+    "category": "Urban Development",
+    "eligibility": "All urban local bodies",
+    "state": "All India",
+    "target": "General",
+    "benefits": [
+      "ODF sustainability",
+      "Waste processing",
+      "Bio-mining of dumpsites"
+    ],
+    "documents": [
+      "ULB proposals"
+    ],
+    "steps": [
+      "Check eligibility on the official portal",
+      "Register and create an account",
+      "Fill in the application form with required details",
+      "Upload necessary documents",
+      "Submit the application for verification",
+      "Track application status online"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": "https://swachhbharatmission.gov.in"
+  },
+  {
+    "id": "tn-kalaignar",
+    "name": "Kalaignar Magalir Urimai Thogai",
+    "description": "Rs.1,000 monthly assistance to women heads of families in Tamil Nadu.",
+    "category": "Social Welfare",
+    "eligibility": "Women family heads in TN",
+    "state": "Tamil Nadu",
+    "target": "Women",
+    "benefits": [
+      "State-specific scheme of Tamil Nadu",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "tn-breakfast",
+    "name": "TN Chief Minister Breakfast Scheme",
+    "description": "Free breakfast for government primary school students in Tamil Nadu.",
+    "category": "Education",
+    "eligibility": "Primary school students in TN govt schools",
+    "state": "Tamil Nadu",
+    "target": "Students",
+    "benefits": [
+      "State-specific scheme of Tamil Nadu",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "tn-health",
+    "name": "TN Chief Minister Comprehensive Health Insurance",
+    "description": "Free medical and surgical treatment up to Rs.5 lakh for TN residents.",
+    "category": "Healthcare",
+    "eligibility": "Tamil Nadu residents",
+    "state": "Tamil Nadu",
+    "target": "General",
+    "benefits": [
+      "State-specific scheme of Tamil Nadu",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "kl-life",
+    "name": "Kerala LIFE Mission",
+    "description": "Housing for all homeless and landless families in Kerala.",
+    "category": "Housing",
+    "eligibility": "Homeless families in Kerala",
+    "state": "Kerala",
+    "target": "General",
+    "benefits": [
+      "State-specific scheme of Kerala",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "kl-kshema",
+    "name": "Kerala Social Security Pension",
+    "description": "Monthly pension for aged, disabled, and widowed persons in Kerala.",
+    "category": "Social Welfare",
+    "eligibility": "Elderly, disabled, widows in Kerala",
+    "state": "Kerala",
+    "target": "Senior Citizens",
+    "benefits": [
+      "State-specific scheme of Kerala",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "mh-ladki-bahin",
+    "name": "Ladki Bahin Yojana",
+    "description": "Rs.1,500 monthly financial assistance to women aged 21-65 in Maharashtra.",
+    "category": "Social Welfare",
+    "eligibility": "Women aged 21-65 in Maharashtra",
+    "state": "Maharashtra",
+    "target": "Women",
+    "benefits": [
+      "State-specific scheme of Maharashtra",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "mh-ebc",
+    "name": "Maharashtra EBC Fee Waiver",
+    "description": "Fee waiver for economically backward class students in Maharashtra.",
+    "category": "Education",
+    "eligibility": "EBC students in Maharashtra",
+    "state": "Maharashtra",
+    "target": "Students",
+    "benefits": [
+      "State-specific scheme of Maharashtra",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "mh-shetkari",
+    "name": "Namo Shetkari Yojana",
+    "description": "Rs.6,000/year additional to PM-KISAN for Maharashtra farmers.",
+    "category": "Agriculture",
+    "eligibility": "Maharashtra farmers",
+    "state": "Maharashtra",
+    "target": "Farmers",
+    "benefits": [
+      "State-specific scheme of Maharashtra",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "up-kanya-sumangala",
+    "name": "Kanya Sumangala Yojana",
+    "description": "Rs.15,000 in six installments for girl children in UP from birth to graduation.",
+    "category": "Women & Child",
+    "eligibility": "Girl children in UP",
+    "state": "Uttar Pradesh",
+    "target": "Children",
+    "benefits": [
+      "State-specific scheme of Uttar Pradesh",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "up-pension",
+    "name": "UP Vridha Pension Yojana",
+    "description": "Monthly pension of Rs.1,000 for elderly citizens above 60 in UP.",
+    "category": "Social Welfare",
+    "eligibility": "Senior citizens in UP",
+    "state": "Uttar Pradesh",
+    "target": "Senior Citizens",
+    "benefits": [
+      "State-specific scheme of Uttar Pradesh",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "rj-chiranjeevi",
+    "name": "Rajasthan Chiranjeevi Yojana",
+    "description": "Universal health insurance of Rs.25 lakh for every family in Rajasthan.",
+    "category": "Healthcare",
+    "eligibility": "All Rajasthan families",
+    "state": "Rajasthan",
+    "target": "General",
+    "benefits": [
+      "State-specific scheme of Rajasthan",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "rj-indira-gandhi",
+    "name": "Indira Gandhi Free Smartphone Yojana",
+    "description": "Free smartphones to women heads of families in Rajasthan.",
+    "category": "Digital India",
+    "eligibility": "Women in Rajasthan",
+    "state": "Rajasthan",
+    "target": "Women",
+    "benefits": [
+      "State-specific scheme of Rajasthan",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "ka-gruha-lakshmi",
+    "name": "Gruha Lakshmi Scheme",
+    "description": "Rs.2,000 monthly transfer to women heads of households in Karnataka.",
+    "category": "Social Welfare",
+    "eligibility": "Women household heads in Karnataka",
+    "state": "Karnataka",
+    "target": "Women",
+    "benefits": [
+      "State-specific scheme of Karnataka",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "ka-anna-bhagya",
+    "name": "Anna Bhagya Scheme",
+    "description": "10 kg free rice per month to BPL families in Karnataka.",
+    "category": "Food & Distribution",
+    "eligibility": "BPL families in Karnataka",
+    "state": "Karnataka",
+    "target": "BPL Families",
+    "benefits": [
+      "State-specific scheme of Karnataka",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "gj-kisan",
+    "name": "Gujarat Kisan Suryoday Yojana",
+    "description": "Daytime electricity for agriculture in Gujarat with dedicated feeder.",
+    "category": "Energy",
+    "eligibility": "Gujarat farmers",
+    "state": "Gujarat",
+    "target": "Farmers",
+    "benefits": [
+      "State-specific scheme of Gujarat",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "wb-lakshmir",
+    "name": "Lakshmir Bhandar",
+    "description": "Monthly income support of Rs.500-1,000 to women heads of families in West Bengal.",
+    "category": "Social Welfare",
+    "eligibility": "Women in West Bengal aged 25-60",
+    "state": "West Bengal",
+    "target": "Women",
+    "benefits": [
+      "State-specific scheme of West Bengal",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "wb-kanyashree",
+    "name": "Kanyashree Prakalpa",
+    "description": "Annual scholarship and one-time grant for girl students in West Bengal.",
+    "category": "Education",
+    "eligibility": "Girl students in WB from low-income families",
+    "state": "West Bengal",
+    "target": "Students",
+    "benefits": [
+      "State-specific scheme of West Bengal",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "mp-ladli",
+    "name": "Ladli Behna Yojana",
+    "description": "Rs.1,250 monthly financial assistance to women aged 21-60 in Madhya Pradesh.",
+    "category": "Social Welfare",
+    "eligibility": "Women aged 21-60 in MP",
+    "state": "Madhya Pradesh",
+    "target": "Women",
+    "benefits": [
+      "State-specific scheme of Madhya Pradesh",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "ap-amma-vodi",
+    "name": "Amma Vodi Scheme",
+    "description": "Rs.15,000/year to mothers/guardians who send children to school in AP.",
+    "category": "Education",
+    "eligibility": "Mothers in AP with school-going children",
+    "state": "Andhra Pradesh",
+    "target": "Women",
+    "benefits": [
+      "State-specific scheme of Andhra Pradesh",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "ap-rythu-bharosa",
+    "name": "YSR Rythu Bharosa",
+    "description": "Rs.13,500/year investment support to farmers in Andhra Pradesh.",
+    "category": "Agriculture",
+    "eligibility": "AP farmers",
+    "state": "Andhra Pradesh",
+    "target": "Farmers",
+    "benefits": [
+      "State-specific scheme of Andhra Pradesh",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "ts-rythu-bandhu",
+    "name": "Rythu Bandhu",
+    "description": "Rs.10,000/acre/year investment support to Telangana farmers.",
+    "category": "Agriculture",
+    "eligibility": "Telangana farmers with patta land",
+    "state": "Telangana",
+    "target": "Farmers",
+    "benefits": [
+      "State-specific scheme of Telangana",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "ts-kalyana-lakshmi",
+    "name": "Kalyana Lakshmi",
+    "description": "Rs.1,00,116 marriage assistance for girls from poor families in Telangana.",
+    "category": "Women & Child",
+    "eligibility": "Girls from poor families in Telangana",
+    "state": "Telangana",
+    "target": "Women",
+    "benefits": [
+      "State-specific scheme of Telangana",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "od-kalia",
+    "name": "KALIA Scheme",
+    "description": "Rs.10,000/year financial assistance to small and marginal farmers in Odisha.",
+    "category": "Agriculture",
+    "eligibility": "Small/marginal farmers in Odisha",
+    "state": "Odisha",
+    "target": "Farmers",
+    "benefits": [
+      "State-specific scheme of Odisha",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "pb-aashirwad",
+    "name": "Punjab Aashirwad Scheme",
+    "description": "Rs.51,000 shagun to SC families for daughter's marriage in Punjab.",
+    "category": "Social Welfare",
+    "eligibility": "SC families in Punjab",
+    "state": "Punjab",
+    "target": "SC/ST",
+    "benefits": [
+      "State-specific scheme of Punjab",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "bh-student-credit",
+    "name": "Bihar Student Credit Card",
+    "description": "Education loan up to Rs.4 lakh at zero interest for Bihar students.",
+    "category": "Education",
+    "eligibility": "Bihar students after Class 12",
+    "state": "Bihar",
+    "target": "Students",
+    "benefits": [
+      "State-specific scheme of Bihar",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "cg-mahtari-vandan",
+    "name": "Mahtari Vandan Yojana",
+    "description": "Rs.1,000 monthly to married women aged 21+ in Chhattisgarh.",
+    "category": "Social Welfare",
+    "eligibility": "Married women in CG",
+    "state": "Chhattisgarh",
+    "target": "Women",
+    "benefits": [
+      "State-specific scheme of Chhattisgarh",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "jh-savitribai",
+    "name": "Savitribai Phule Kishori Samridhi",
+    "description": "Financial assistance for girl students from Class 8-12 in Jharkhand.",
+    "category": "Education",
+    "eligibility": "Girl students in Jharkhand",
+    "state": "Jharkhand",
+    "target": "Students",
+    "benefits": [
+      "State-specific scheme of Jharkhand",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "as-orunodoi",
+    "name": "Arunodoi Scheme",
+    "description": "Rs.1,250 monthly financial assistance to women in economically weaker families in Assam.",
+    "category": "Social Welfare",
+    "eligibility": "Women in Assam from low-income families",
+    "state": "Assam",
+    "target": "Women",
+    "benefits": [
+      "State-specific scheme of Assam",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "hr-ladli",
+    "name": "Ladli Scheme",
+    "description": "Rs.5,000/year for second girl child from birth to Class 12 in Haryana.",
+    "category": "Women & Child",
+    "eligibility": "Families with second girl child in Haryana",
+    "state": "Haryana",
+    "target": "Children",
+    "benefits": [
+      "State-specific scheme of Haryana",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "hp-sahara",
+    "name": "HP SAHARA Yojana",
+    "description": "Rs.3,000/month financial support to patients of serious diseases in HP.",
+    "category": "Healthcare",
+    "eligibility": "Serious disease patients in HP",
+    "state": "Himachal Pradesh",
+    "target": "General",
+    "benefits": [
+      "State-specific scheme of Himachal Pradesh",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  },
+  {
+    "id": "ga-laadli",
+    "name": "Goa Laadli Laxmi Scheme",
+    "description": "Financial support for girl children from birth to Class 12 in Goa.",
+    "category": "Women & Child",
+    "eligibility": "Girl children in Goa",
+    "state": "Goa",
+    "target": "Children",
+    "benefits": [
+      "State-specific scheme of Goa",
+      "Direct benefit to eligible residents"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Domicile/Residence proof",
+      "Bank account details"
+    ],
+    "steps": [
+      "Check eligibility on official state portal",
+      "Apply online or at local office",
+      "Submit documents",
+      "Verification and approval"
+    ],
+    "deadline": "Ongoing",
+    "sourceUrl": ""
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "name": "janseva-backend",
+  "version": "1.0.0",
+  "description": "JanSeva AI Backend - Scheme scraper & RAG search",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "scrape": "node -e \"require('./scraper').scrapeSchemes().then(r => console.log('Scraped', r.length, 'schemes'))\""
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.7.0",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "express": "^4.21.0"
+  }
+}
