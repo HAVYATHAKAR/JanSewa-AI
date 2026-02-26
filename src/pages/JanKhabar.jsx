@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useLang } from '../context/LanguageContext';
 import './JanKhabar.css';
 
 export default function JanKhabar({ onOpenAI }) {
+    const { t } = useLang();
     const [schemes, setSchemes] = useState([]);
     const [search, setSearch] = useState('');
     const [category, setCategory] = useState('All');
@@ -14,13 +16,11 @@ export default function JanKhabar({ onOpenAI }) {
     const [totalSchemes, setTotalSchemes] = useState(0);
     const [isSearching, setIsSearching] = useState(false);
 
-    // Load schemes from backend on mount
     useEffect(() => {
         fetchSchemes();
         fetchFilters();
     }, []);
 
-    // Refetch when filters change
     useEffect(() => {
         if (!isSearching) {
             fetchSchemes();
@@ -105,25 +105,25 @@ export default function JanKhabar({ onOpenAI }) {
     return (
         <div className="jankhabar-page">
             <div className="jankhabar-header">
-                <h1>🔎 JanKhabar</h1>
-                <p>Discover government welfare schemes tailored for you</p>
+                <h1>🔎 {t('jankhabarTitle')}</h1>
+                <p>{t('jankhabarDesc')}</p>
             </div>
 
             <div className="scheme-search-bar">
                 <input
                     type="text"
-                    placeholder="Ask about schemes for students, farmers, or businesses…"
+                    placeholder={t('searchPlaceholder')}
                     value={search}
                     onChange={e => setSearch(e.target.value)}
                     onKeyDown={handleSearchKeyDown}
                 />
                 {isSearching && (
                     <button className="search-btn" onClick={handleSearchClear} style={{ background: 'var(--surface-hover)', color: 'var(--text-secondary)', boxShadow: 'none' }}>
-                        ✕ Clear
+                        ✕
                     </button>
                 )}
                 <button className="search-btn" onClick={handleSearch}>
-                    {isSearching ? '🔎 Re-search' : '🔎 Search'}
+                    🔎 {t('search')}
                 </button>
             </div>
 
@@ -147,19 +147,19 @@ export default function JanKhabar({ onOpenAI }) {
             <div className="jankhabar-layout">
                 {/* Filter Panel */}
                 <div className="card filter-panel">
-                    <h3>⚙ Filters</h3>
+                    <h3>⚙ {t('filters')}</h3>
 
                     <div className="filter-group">
-                        <label>Category</label>
+                        <label>{t('category')}</label>
                         <select value={category} onChange={e => { setCategory(e.target.value); setIsSearching(false); }}>
                             {categories.map(c => <option key={c} value={c}>{c}</option>)}
                         </select>
                     </div>
 
                     <div className="filter-group">
-                        <label>Income Level</label>
+                        <label>{t('incomeLevel')}</label>
                         <select>
-                            <option>All Levels</option>
+                            <option>{t('allLevels')}</option>
                             <option>Below ₹1 Lakh</option>
                             <option>₹1-3 Lakh</option>
                             <option>₹3-5 Lakh</option>
@@ -168,9 +168,9 @@ export default function JanKhabar({ onOpenAI }) {
                     </div>
 
                     <div className="filter-group">
-                        <label>State / Region</label>
+                        <label>{t('stateRegion')}</label>
                         <select>
-                            <option>All India</option>
+                            <option>{t('allIndia')}</option>
                             <option>Delhi</option>
                             <option>Maharashtra</option>
                             <option>Karnataka</option>
@@ -180,36 +180,34 @@ export default function JanKhabar({ onOpenAI }) {
                     </div>
 
                     <div className="filter-group">
-                        <label>Target Group</label>
+                        <label>{t('targetGroup')}</label>
                         <div className="filter-tags">
-                            {targetGroups.map(t => (
+                            {targetGroups.map(tg => (
                                 <button
-                                    key={t}
-                                    className={`filter-tag ${target === t ? 'active' : ''}`}
-                                    onClick={() => { setTarget(t); setIsSearching(false); }}
+                                    key={tg}
+                                    className={`filter-tag ${target === tg ? 'active' : ''}`}
+                                    onClick={() => { setTarget(tg); setIsSearching(false); }}
                                 >
-                                    {t}
+                                    {tg}
                                 </button>
                             ))}
                         </div>
                     </div>
 
                     <button className="filter-reset" onClick={() => { setCategory('All'); setTarget('All'); handleSearchClear(); }}>
-                        Reset Filters
+                        {t('resetFilters')}
                     </button>
                 </div>
 
                 {/* Results */}
                 <div className="schemes-grid">
                     <div className="results-count">
-                        {loading ? 'Loading schemes...' : `Showing ${schemes.length} of ${totalSchemes} schemes`}
-                        {isSearching && ' (ranked by relevance)'}
+                        {loading ? '...' : `${t('showing')} ${schemes.length} ${t('of')} ${totalSchemes} ${t('schemes')}`}
                     </div>
 
                     {loading && (
                         <div style={{ textAlign: 'center', padding: '3rem' }}>
                             <div style={{ fontSize: '2rem', animation: 'pulse 1.5s ease-in-out infinite' }}>🔎</div>
-                            <p style={{ color: 'var(--text-tertiary)', marginTop: '1rem' }}>Loading schemes...</p>
                         </div>
                     )}
 
@@ -229,15 +227,10 @@ export default function JanKhabar({ onOpenAI }) {
                             <div className="scheme-card-tags">
                                 <span className="scheme-tag category">{scheme.category}</span>
                                 <span className="scheme-tag eligible">✓ {scheme.eligibility}</span>
-                                {scheme.relevanceScore && (
-                                    <span className="scheme-tag category" style={{ background: 'rgba(139,92,246,0.1)', color: 'var(--accent-purple)' }}>
-                                        Score: {scheme.relevanceScore}
-                                    </span>
-                                )}
                             </div>
                             <div className="scheme-card-actions">
-                                <Link to={`/jankhabar/${scheme.id}`} className="btn btn-primary">View Details</Link>
-                                <button className="btn btn-outline" onClick={onOpenAI}>Ask AI</button>
+                                <Link to={`/jankhabar/${scheme.id}`} className="btn btn-primary">{t('viewDetails')}</Link>
+                                <button className="btn btn-outline" onClick={onOpenAI}>{t('askAITitle')}</button>
                             </div>
                         </div>
                     ))}
@@ -245,7 +238,7 @@ export default function JanKhabar({ onOpenAI }) {
                     {!loading && schemes.length === 0 && (
                         <div style={{ textAlign: 'center', padding: '3rem', color: 'var(--text-tertiary)' }}>
                             <p style={{ fontSize: '2rem', marginBottom: '1rem' }}>🔍</p>
-                            <p>No schemes found. Try adjusting your filters or search query.</p>
+                            <p>{t('noComplaints')}</p>
                         </div>
                     )}
                 </div>

@@ -1,15 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { useComplaints } from '../context/ComplaintContext';
+import { useLang } from '../context/LanguageContext';
 import './JanSamasya.css';
-
-const steps = [
-    { label: 'Photo', icon: '📷' },
-    { label: 'Location', icon: '📍' },
-    { label: 'Describe', icon: '✏️' },
-    { label: 'AI Review', icon: '🤖' },
-    { label: 'Confirm', icon: '✅' },
-];
 
 const CATEGORIES = [
     { value: 'Road & Infrastructure', label: '🚧 Road & Infrastructure', keywords: ['pothole', 'road', 'broken', 'crack', 'bridge', 'footpath'] },
@@ -32,6 +25,7 @@ function detectCategory(text) {
 
 export default function JanSamasya() {
     const { addComplaint } = useComplaints();
+    const { t } = useLang();
     const [step, setStep] = useState(0);
     const [photo, setPhoto] = useState(null);
     const [description, setDescription] = useState('');
@@ -39,7 +33,14 @@ export default function JanSamasya() {
     const [submittedComplaint, setSubmittedComplaint] = useState(null);
     const [selectedCategory, setSelectedCategory] = useState('Road & Infrastructure');
 
-    // Geolocation state
+    const steps = [
+        { label: t('photo'), icon: '📷' },
+        { label: t('location'), icon: '📍' },
+        { label: t('describe'), icon: '✏️' },
+        { label: t('aiReview'), icon: '🤖' },
+        { label: t('confirm'), icon: '✅' },
+    ];
+
     const [location, setLocation] = useState({
         lat: null,
         lng: null,
@@ -56,9 +57,6 @@ export default function JanSamasya() {
         }
     };
 
-    /**
-     * Get user's current position via browser Geolocation API
-     */
     const detectLocation = useCallback(() => {
         if (!navigator.geolocation) {
             setLocation(prev => ({ ...prev, error: 'Geolocation is not supported by your browser' }));
@@ -72,7 +70,6 @@ export default function JanSamasya() {
                 const { latitude, longitude } = position.coords;
                 setLocation(prev => ({ ...prev, lat: latitude, lng: longitude }));
 
-                // Reverse geocode using OpenStreetMap Nominatim (free, no API key)
                 try {
                     const response = await fetch(
                         `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}&zoom=18&addressdetails=1`,
@@ -139,7 +136,6 @@ export default function JanSamasya() {
         );
     }, []);
 
-    // Auto-detect location when the user reaches step 1
     useEffect(() => {
         if (step === 1 && !location.lat && !location.loading && !location.manualOverride) {
             detectLocation();
@@ -154,7 +150,6 @@ export default function JanSamasya() {
         }));
     };
 
-    // Auto-detect category when description changes
     useEffect(() => {
         if (description.trim().length > 5) {
             setSelectedCategory(detectCategory(description));
@@ -163,7 +158,6 @@ export default function JanSamasya() {
 
     const nextStep = () => {
         if (step === 4) {
-            // Submit complaint to shared context
             const result = addComplaint({
                 title: description.substring(0, 60) || `${selectedCategory} Report`,
                 category: selectedCategory,
@@ -191,14 +185,14 @@ export default function JanSamasya() {
             case 0:
                 return (
                     <div>
-                        <h2>📷 Capture the Issue</h2>
-                        <p className="step-desc">Upload a photo of the civic issue you want to report.</p>
+                        <h2>{t('captureIssue')}</h2>
+                        <p className="step-desc">{t('captureDesc')}</p>
                         <label>
                             <input type="file" accept="image/*" capture="environment" onChange={handlePhotoUpload} style={{ display: 'none' }} />
                             <div className="photo-upload-area">
                                 <div className="upload-icon">📸</div>
-                                <h3>Click to upload or take a photo</h3>
-                                <p>Supports JPG, PNG up to 10MB</p>
+                                <h3>{t('clickUpload')}</h3>
+                                <p>{t('uploadFormat')}</p>
                             </div>
                         </label>
                         {photo && (
@@ -211,19 +205,14 @@ export default function JanSamasya() {
             case 1:
                 return (
                     <div>
-                        <h2>📍 Confirm Location</h2>
-                        <p className="step-desc">
-                            {location.loading ? 'Detecting your location...' :
-                                location.lat ? 'We\'ve detected your location. Adjust if needed.' :
-                                    'Allow location access or enter your address manually.'}
-                        </p>
+                        <h2>{t('pinLocation')}</h2>
+                        <p className="step-desc">{t('pinDesc')}</p>
 
-                        {/* Map Container */}
                         <div className="map-container" style={{ height: location.lat ? '300px' : undefined }}>
                             {location.loading ? (
                                 <>
                                     <div className="map-pin" style={{ animation: 'pulse 1.5s ease-in-out infinite' }}>📡</div>
-                                    <div className="map-label">Detecting your location...</div>
+                                    <div className="map-label">{t('detectLocation')}...</div>
                                 </>
                             ) : location.lat ? (
                                 <iframe
@@ -244,13 +233,12 @@ export default function JanSamasya() {
                                 <>
                                     <div className="map-pin">📍</div>
                                     <div className="map-label">
-                                        {location.error || 'Click "Detect Location" to find your position'}
+                                        {location.error || t('detectLocation')}
                                     </div>
                                 </>
                             )}
                         </div>
 
-                        {/* Location Info */}
                         <div className="location-info" style={{ marginTop: 'var(--space-4)' }}>
                             <span>📍</span>
                             {location.address ? (
@@ -266,16 +254,14 @@ export default function JanSamasya() {
                                         color: 'var(--text-primary)',
                                         padding: '0',
                                     }}
-                                    placeholder="Enter or adjust your address..."
                                 />
                             ) : (
                                 <span style={{ flex: 1, fontSize: 'var(--fs-sm)', color: 'var(--text-tertiary)' }}>
-                                    No location detected yet
+                                    {t('enterManually')}
                                 </span>
                             )}
                         </div>
 
-                        {/* Action Buttons */}
                         <div style={{ display: 'flex', gap: 'var(--space-3)', marginTop: 'var(--space-4)' }}>
                             <button
                                 className="btn btn-secondary"
@@ -283,14 +269,14 @@ export default function JanSamasya() {
                                 disabled={location.loading}
                                 style={{ flex: 1 }}
                             >
-                                {location.loading ? '📡 Detecting...' : location.lat ? '🔄 Re-detect' : '📡 Detect Location'}
+                                {t('detectLocation')}
                             </button>
                             <button
                                 className="btn btn-outline"
                                 onClick={() => setLocation(prev => ({ ...prev, manualOverride: true, error: null }))}
                                 style={{ flex: 1 }}
                             >
-                                ✏️ Enter Manually
+                                ✏️ {t('enterManually')}
                             </button>
                         </div>
 
@@ -307,27 +293,16 @@ export default function JanSamasya() {
                                 ⚠ {location.error}
                             </div>
                         )}
-
-                        {location.lat && (
-                            <div style={{
-                                marginTop: 'var(--space-3)',
-                                fontSize: 'var(--fs-xs)',
-                                color: 'var(--text-tertiary)',
-                                textAlign: 'center',
-                            }}>
-                                Coordinates: {location.lat.toFixed(5)}, {location.lng.toFixed(5)}
-                            </div>
-                        )}
                     </div>
                 );
             case 2:
                 return (
                     <div>
-                        <h2>✏️ Describe the Problem</h2>
-                        <p className="step-desc">Provide details about the issue. Be as specific as possible.</p>
+                        <h2>{t('describeIssue')}</h2>
+                        <p className="step-desc">{t('describeDesc')}</p>
                         <textarea
                             className="complaint-textarea"
-                            placeholder="Describe the civic issue, e.g., 'Large pothole near the bus stop causing accidents. It has been here for 2 weeks...'"
+                            placeholder={t('complaintPlaceholder')}
                             value={description}
                             onChange={e => setDescription(e.target.value)}
                         />
@@ -336,15 +311,14 @@ export default function JanSamasya() {
             case 3:
                 return (
                     <div>
-                        <h2>🤖 AI Analysis</h2>
-                        <p className="step-desc">Our AI has analyzed your submission. Review the details below.</p>
+                        <h2>{t('aiPreviewTitle')}</h2>
                         <div className="ai-preview">
                             <div className="ai-preview-header">
-                                <span className="ai-badge">AI Generated</span>
-                                <h3>Complaint Preview</h3>
+                                <span className="ai-badge">AI</span>
+                                <h3>{t('aiPreviewTitle')}</h3>
                             </div>
                             <div className="ai-detected">
-                                <h4>Detected Category</h4>
+                                <h4>{t('detectedCategory')}</h4>
                                 <div className="detected-value">
                                     {CATEGORIES.find(c => c.value === selectedCategory)?.label || selectedCategory}
                                 </div>
@@ -366,11 +340,8 @@ export default function JanSamasya() {
                                 </select>
                             </div>
                             <div className="ai-formal">
-                                <h4>Formal Complaint Draft</h4>
-                                <p>
-                                    {description ||
-                                        `A significant road infrastructure issue has been identified at ${location.address || 'the reported location'}. The reported condition poses a safety hazard to commuters and pedestrians and requires immediate attention from the concerned municipal authority. Photographic evidence has been attached for verification.`}
-                                </p>
+                                <h4>{t('formalDescription')}</h4>
+                                <p>{description || `A civic issue has been identified at ${location.address || 'the reported location'}.`}</p>
                             </div>
                         </div>
                     </div>
@@ -380,55 +351,54 @@ export default function JanSamasya() {
                     return (
                         <div className="confirmation-screen">
                             <div className="confirm-icon">✅</div>
-                            <h2>Complaint Submitted Successfully!</h2>
+                            <h2>{t('complaintSubmitted')}</h2>
                             <p style={{ color: 'var(--text-secondary)', marginBottom: 'var(--space-6)' }}>
-                                Your complaint has been registered. You'll receive updates on your registered contact.
+                                {t('complaintSubmittedDesc')}
                             </p>
                             <div className="confirm-details">
                                 <div className="detail-row">
-                                    <span className="detail-label">Complaint ID</span>
+                                    <span className="detail-label">{t('complaintId')}</span>
                                     <span className="detail-value">#{submittedComplaint.id}</span>
                                 </div>
                                 <div className="detail-row">
-                                    <span className="detail-label">Category</span>
+                                    <span className="detail-label">{t('category')}</span>
                                     <span className="detail-value">{submittedComplaint.category}</span>
                                 </div>
                                 <div className="detail-row">
-                                    <span className="detail-label">Location</span>
+                                    <span className="detail-label">{t('location')}</span>
                                     <span className="detail-value">{submittedComplaint.location}</span>
                                 </div>
                                 <div className="detail-row">
-                                    <span className="detail-label">Est. Response</span>
-                                    <span className="detail-value">3-5 working days</span>
+                                    <span className="detail-label">{t('status')}</span>
+                                    <span className="detail-value">{t('filed')}</span>
                                 </div>
                             </div>
                             <div style={{ display: 'flex', gap: 'var(--space-4)', justifyContent: 'center' }}>
-                                <Link to="/track" className="btn btn-primary">Track Complaint</Link>
-                                <Link to="/" className="btn btn-outline">Back to Home</Link>
+                                <Link to="/track" className="btn btn-primary">{t('goToTrack')}</Link>
+                                <Link to="/jansamasya" className="btn btn-outline" onClick={() => { setStep(0); setSubmitted(false); setPhoto(null); setDescription(''); }}>{t('fileAnother')}</Link>
                             </div>
                         </div>
                     );
                 }
                 return (
                     <div>
-                        <h2>✅ Review & Submit</h2>
-                        <p className="step-desc">Please review all details before submitting your complaint.</p>
+                        <h2>✅ {t('confirm')}</h2>
                         <div className="confirm-details" style={{ width: '100%', display: 'flex' }}>
                             <div className="detail-row">
-                                <span className="detail-label">Photo</span>
-                                <span className="detail-value">{photo ? '✅ Uploaded' : '⚠ Not uploaded'}</span>
+                                <span className="detail-label">{t('photo')}</span>
+                                <span className="detail-value">{photo ? '✅' : '⚠'}</span>
                             </div>
                             <div className="detail-row">
-                                <span className="detail-label">Location</span>
-                                <span className="detail-value">{location.address || '⚠ Not detected'}</span>
+                                <span className="detail-label">{t('location')}</span>
+                                <span className="detail-value">{location.address || '⚠'}</span>
                             </div>
                             <div className="detail-row">
-                                <span className="detail-label">Category</span>
+                                <span className="detail-label">{t('category')}</span>
                                 <span className="detail-value">{selectedCategory}</span>
                             </div>
                             <div className="detail-row">
-                                <span className="detail-label">Description</span>
-                                <span className="detail-value">{description.substring(0, 60) || 'Auto-generated'}{description.length > 60 ? '...' : ''}</span>
+                                <span className="detail-label">{t('description')}</span>
+                                <span className="detail-value">{description.substring(0, 60) || '—'}{description.length > 60 ? '...' : ''}</span>
                             </div>
                         </div>
                     </div>
@@ -441,11 +411,10 @@ export default function JanSamasya() {
     return (
         <div className="jansamasya-page">
             <div className="jansamasya-header">
-                <h1>🛠 JanSamasya</h1>
-                <p>Report civic issues in your area quickly and easily</p>
+                <h1>🛠 {t('jansamasyaTitle')}</h1>
+                <p>{t('jansamasyaDesc')}</p>
             </div>
 
-            {/* Progress */}
             <div className="wizard-progress">
                 {steps.map((s, i) => (
                     <div key={i} style={{ display: 'contents' }}>
@@ -462,17 +431,16 @@ export default function JanSamasya() {
                 ))}
             </div>
 
-            {/* Content */}
             <div className="card wizard-content">
                 {renderStep()}
 
                 {!submitted && (
                     <div className="wizard-nav">
                         <button className="btn btn-ghost" onClick={prevStep} disabled={step === 0}>
-                            ← Previous
+                            {t('previous')}
                         </button>
                         <button className="btn btn-primary" onClick={nextStep}>
-                            {step === 4 ? 'Submit Complaint →' : 'Continue →'}
+                            {step === 4 ? t('submitComplaint') : t('continueBtn')}
                         </button>
                     </div>
                 )}

@@ -1,58 +1,38 @@
 import { useState, useRef, useEffect } from 'react';
+import { useLang } from '../context/LanguageContext';
 import './AIChat.css';
 
-const initialMessages = [
-    {
-        type: 'bot',
-        text: 'Namaste! 🙏 I\'m JanSeva AI, your civic services assistant. I can help you discover government schemes, understand eligibility, or draft complaint descriptions. How can I help you today?'
-    }
-];
-
-const suggestedPrompts = [
-    'What schemes am I eligible for?',
-    'Help me write a complaint',
-    'Explain PM Kisan Yojana',
-    'Scholarship options for students',
-];
-
 export default function AIChat({ isOpen, onClose }) {
-    const [messages, setMessages] = useState(initialMessages);
+    const { t } = useLang();
+    const [messages, setMessages] = useState([
+        { type: 'bot', text: t('aiChatGreeting') }
+    ]);
     const [input, setInput] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const messagesEndRef = useRef(null);
 
-    // Auto-scroll to bottom when messages change
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     }, [messages]);
 
-    /**
-     * Build conversation history for the API (excluding the initial greeting)
-     */
     const getHistory = () => {
         return messages
-            .filter((_, i) => i > 0) // skip initial greeting
+            .filter((_, i) => i > 0)
             .map(m => ({
                 role: m.type === 'bot' ? 'assistant' : 'user',
                 content: m.text,
             }));
     };
 
-    /**
-     * Send message and stream the AI response
-     */
     const handleSend = async () => {
         const text = input.trim();
         if (!text || isLoading) return;
 
-        // Add user message
         const userMsg = { type: 'user', text };
         setMessages(prev => [...prev, userMsg]);
         setInput('');
         setIsLoading(true);
 
-        // Add placeholder bot message for streaming
-        const botMsgIndex = messages.length + 1; // +1 for userMsg just added
         setMessages(prev => [...prev, { type: 'bot', text: '', streaming: true }]);
 
         try {
@@ -65,7 +45,6 @@ export default function AIChat({ isOpen, onClose }) {
                 }),
             });
 
-            // Handle non-streaming error responses
             if (!response.ok) {
                 const errorData = await response.json().catch(() => ({}));
                 const errorMsg = errorData.error || `Server error (${response.status})`;
@@ -82,7 +61,6 @@ export default function AIChat({ isOpen, onClose }) {
                 return;
             }
 
-            // Stream SSE response
             const reader = response.body.getReader();
             const decoder = new TextDecoder();
             let fullText = '';
@@ -110,7 +88,6 @@ export default function AIChat({ isOpen, onClose }) {
                             // Skip malformed JSON
                         }
 
-                        // Update the streaming message
                         setMessages(prev => {
                             const updated = [...prev];
                             updated[updated.length - 1] = {
@@ -124,7 +101,6 @@ export default function AIChat({ isOpen, onClose }) {
                 }
             }
 
-            // Mark streaming complete
             setMessages(prev => {
                 const updated = [...prev];
                 updated[updated.length - 1] = {
@@ -140,7 +116,7 @@ export default function AIChat({ isOpen, onClose }) {
                 const updated = [...prev];
                 updated[updated.length - 1] = {
                     type: 'bot',
-                    text: '⚠️ Could not connect to the AI server. Please make sure the backend is running on port 3001.',
+                    text: `⚠️ ${t('connectError')}`,
                     isError: true,
                 };
                 return updated;
@@ -154,6 +130,8 @@ export default function AIChat({ isOpen, onClose }) {
         setInput(prompt);
     };
 
+    const prompts = [t('aiPrompt1'), t('aiPrompt2'), t('aiPrompt3'), t('aiPrompt4')];
+
     return (
         <>
             <div className={`ai-chat-overlay ${isOpen ? 'visible' : ''}`} onClick={onClose} />
@@ -162,8 +140,8 @@ export default function AIChat({ isOpen, onClose }) {
                     <div className="ai-chat-header-left">
                         <div className="ai-avatar">🤖</div>
                         <div>
-                            <h3>JanSeva AI</h3>
-                            <p>● Online</p>
+                            <h3>{t('aiChatTitle')}</h3>
+                            <p>● {t('aiChatOnline')}</p>
                         </div>
                     </div>
                     <button className="ai-chat-close" onClick={onClose}>✕</button>
@@ -195,7 +173,7 @@ export default function AIChat({ isOpen, onClose }) {
 
                 {!isLoading && messages.length <= 1 && (
                     <div className="ai-suggested-prompts">
-                        {suggestedPrompts.map((prompt, i) => (
+                        {prompts.map((prompt, i) => (
                             <button key={i} onClick={() => handlePromptClick(prompt)}>
                                 {prompt}
                             </button>
@@ -206,7 +184,7 @@ export default function AIChat({ isOpen, onClose }) {
                 <div className="ai-chat-input-area">
                     <input
                         type="text"
-                        placeholder="Ask JanSeva AI..."
+                        placeholder={t('aiChatPlaceholder')}
                         value={input}
                         onChange={e => setInput(e.target.value)}
                         onKeyDown={e => e.key === 'Enter' && handleSend()}

@@ -1,24 +1,24 @@
 import { Link } from 'react-router-dom';
+import { useLang } from '../context/LanguageContext';
 import './Home.css';
 
 export default function Home({ onOpenAI }) {
+    const { t } = useLang();
+
     return (
         <div className="home-page">
             {/* Hero Section */}
             <section className="hero">
                 <div className="hero-content">
-                    <div className="hero-badge">🇮🇳 Empowering Citizens with Technology</div>
-                    <h1>Find Government Schemes or Report Civic Issues Easily</h1>
-                    <p>
-                        Your single digital gateway to discover welfare schemes, understand eligibility,
-                        and report local civic problems — all in one place.
-                    </p>
+                    <div className="hero-badge">{t('heroBadge')}</div>
+                    <h1>{t('heroTitle')}</h1>
+                    <p>{t('heroDesc')}</p>
                     <div className="hero-actions">
                         <Link to="/jankhabar" className="hero-cta hero-cta-primary">
-                            🔎 Discover Schemes
+                            {t('discoverSchemes')}
                         </Link>
                         <Link to="/jansamasya" className="hero-cta hero-cta-secondary">
-                            🛠 Report Issue
+                            {t('reportIssue')}
                         </Link>
                     </div>
                 </div>
@@ -27,23 +27,23 @@ export default function Home({ onOpenAI }) {
             {/* Quick Actions */}
             <section className="quick-actions-section">
                 <div className="section-header">
-                    <h2>Quick Actions</h2>
+                    <h2>{t('quickActions')}</h2>
                 </div>
                 <div className="quick-actions-grid">
                     <Link to="/jankhabar" className="card quick-action-card">
                         <div className="quick-action-icon eligibility">✅</div>
-                        <h3>Check Eligibility</h3>
-                        <p>See which schemes you qualify for based on your profile</p>
+                        <h3>{t('checkEligibility')}</h3>
+                        <p>{t('checkEligibilityDesc')}</p>
                     </Link>
                     <div className="card quick-action-card" onClick={onOpenAI} role="button" tabIndex={0}>
                         <div className="quick-action-icon ai">🤖</div>
-                        <h3>Ask AI</h3>
-                        <p>Get instant answers about schemes & services</p>
+                        <h3>{t('askAITitle')}</h3>
+                        <p>{t('askAIDesc')}</p>
                     </div>
                     <Link to="/track" className="card quick-action-card">
                         <div className="quick-action-icon track">📊</div>
-                        <h3>Track Complaint</h3>
-                        <p>Check the status of your submitted complaints</p>
+                        <h3>{t('trackComplaint')}</h3>
+                        <p>{t('trackComplaintDesc')}</p>
                     </Link>
                 </div>
             </section>
@@ -52,46 +52,46 @@ export default function Home({ onOpenAI }) {
             <section className="recent-activity-section">
                 <div className="home-grid">
                     <div className="card activity-card">
-                        <h3>📋 Recent Activity</h3>
+                        <h3>{t('recentActivity')}</h3>
                         <div className="activity-item">
                             <div className="activity-icon scheme">📗</div>
                             <div className="activity-text">
-                                <h4>Saved: PM Kisan Samman Nidhi</h4>
-                                <p>2 hours ago</p>
+                                <h4>{t('savedPMKisan')}</h4>
+                                <p>{t('hoursAgo')(2)}</p>
                             </div>
                         </div>
                         <div className="activity-item">
                             <div className="activity-icon complaint">🚧</div>
                             <div className="activity-text">
-                                <h4>Complaint #4521 — Pothole on MG Road</h4>
-                                <p>Status: In Progress • 1 day ago</p>
+                                <h4>{t('complaintPothole')}</h4>
+                                <p>{t('statusInProgress')} • {t('daysAgo')(1)}</p>
                             </div>
                         </div>
                         <div className="activity-item">
                             <div className="activity-icon scheme">📗</div>
                             <div className="activity-text">
-                                <h4>Viewed: Atal Pension Yojana</h4>
-                                <p>3 days ago</p>
+                                <h4>{t('viewedAtal')}</h4>
+                                <p>{t('daysAgo')(3)}</p>
                             </div>
                         </div>
                     </div>
 
                     <div className="card announce-card">
-                        <h3>📢 Announcements</h3>
+                        <h3>{t('announcements')}</h3>
                         <div className="announce-item">
-                            <span className="announce-tag">New Scheme</span>
-                            <h4>PM Vishwakarma Yojana Launched</h4>
-                            <p>Support for traditional artisans and craftspeople. Apply before March 31.</p>
+                            <span className="announce-tag">{t('newScheme')}</span>
+                            <h4>{t('vishwakarmaTitle')}</h4>
+                            <p>{t('vishwakarmaDesc')}</p>
                         </div>
                         <div className="announce-item">
-                            <span className="announce-tag">Deadline</span>
-                            <h4>Scholarship Applications Closing Soon</h4>
-                            <p>National Merit Scholarship deadline: February 28, 2026.</p>
+                            <span className="announce-tag">{t('deadline')}</span>
+                            <h4>{t('scholarshipTitle')}</h4>
+                            <p>{t('scholarshipDesc')}</p>
                         </div>
                         <div className="announce-item">
-                            <span className="announce-tag">Update</span>
-                            <h4>Faster Complaint Resolution</h4>
-                            <p>Average resolution time reduced to 5 days across all categories.</p>
+                            <span className="announce-tag">{t('update')}</span>
+                            <h4>{t('fasterResolution')}</h4>
+                            <p>{t('fasterResolutionDesc')}</p>
                         </div>
                     </div>
                 </div>
@@ -101,19 +101,19 @@ export default function Home({ onOpenAI }) {
             <section className="stats-row">
                 <div className="card stat-card">
                     <div className="stat-value">2,500+</div>
-                    <div className="stat-label">Government Schemes</div>
+                    <div className="stat-label">{t('govtSchemes')}</div>
                 </div>
                 <div className="card stat-card">
                     <div className="stat-value">1.2M</div>
-                    <div className="stat-label">Citizens Helped</div>
+                    <div className="stat-label">{t('citizensHelped')}</div>
                 </div>
                 <div className="card stat-card">
                     <div className="stat-value">89%</div>
-                    <div className="stat-label">Issues Resolved</div>
+                    <div className="stat-label">{t('issuesResolved')}</div>
                 </div>
                 <div className="card stat-card">
                     <div className="stat-value">28</div>
-                    <div className="stat-label">States Covered</div>
+                    <div className="stat-label">{t('statesCovered')}</div>
                 </div>
             </section>
         </div>

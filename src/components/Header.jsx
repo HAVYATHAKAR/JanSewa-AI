@@ -1,8 +1,9 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { useLang } from '../context/LanguageContext';
 import './Header.css';
 
 export default function Header({ onToggleSidebar }) {
-  const location = useLocation();
+  const { lang, toggleLang, t } = useLang();
 
   return (
     <header className="header">
@@ -17,8 +18,8 @@ export default function Header({ onToggleSidebar }) {
       </div>
 
       <div className="header-right">
-        <button className="lang-selector">
-          🌐 <span>English</span> ▾
+        <button className="lang-selector" onClick={toggleLang}>
+          🌐 <span>{t('langLabel')}</span> ▾
         </button>
 
         <Link to="/notifications" className="header-icon-btn" aria-label="Notifications">
@@ -28,7 +29,7 @@ export default function Header({ onToggleSidebar }) {
 
         <Link to="/profile" className="profile-btn">
           <div className="profile-avatar">U</div>
-          <span>User</span>
+          <span>{t('user')}</span>
         </Link>
       </div>
     </header>

@@ -1,0 +1,17 @@
+{
+    "rewrites": [
+        {
+            "source": "/api/schemes/:id",
+            "destination": "/api/schemes/[id]"
+        },
+        {
+            "source": "/((?!api/).*)",
+            "destination": "/index.html"
+        }
+    ],
+    "functions": {
+        "api/chat.js": {
+            "maxDuration": 30
+        }
+    }
+}
