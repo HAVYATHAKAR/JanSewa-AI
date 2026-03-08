@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const express = require('express');
+const path = require('path');
 const cors = require('cors');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const { loadSchemes, scrapeSchemes } = require('./scraper');
@@ -11,6 +12,10 @@ const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
+
+// Serve Vite-built frontend static files
+const distPath = path.join(__dirname, '..', 'dist');
+app.use(express.static(distPath));
 
 // Initialize Gemini client (only if API key is present)
 const gemini = process.env.GEMINI_API_KEY && process.env.GEMINI_API_KEY !== 'your_gemini_api_key_here'
@@ -253,6 +258,11 @@ app.get('/api/health', (req, res) => {
         aiReady: gemini !== null,
         timestamp: new Date().toISOString(),
     });
+});
+
+// Catch-all: serve React app for non-API routes (must be after all API routes)
+app.get('*', (req, res) => {
+    res.sendFile(path.join(distPath, 'index.html'));
 });
 
 // ==================== Start ====================
