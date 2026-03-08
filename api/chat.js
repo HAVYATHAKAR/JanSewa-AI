@@ -1,3 +1,7 @@
+/**
+ * Vercel Serverless Function: POST /api/chat
+ * RAG-augmented AI chat with Amazon Bedrock streaming
+ */
 const { getData, search } = require('./_data');
 
 module.exports = async function handler(req, res) {
@@ -14,17 +18,13 @@ module.exports = async function handler(req, res) {
         return res.status(400).json({ success: false, error: 'Message is required' });
     }
 
-    const apiKey = process.env.GEMINI_API_KEY;
-    if (!apiKey || apiKey === 'your_gemini_api_key_here') {
-        return res.status(503).json({
-            success: false,
-            error: 'AI chat is not configured. Set GEMINI_API_KEY in Vercel environment variables.',
-        });
-    }
-
     try {
-        const { GoogleGenerativeAI } = require('@google/generative-ai');
-        const gemini = new GoogleGenerativeAI(apiKey);
+        const { BedrockRuntimeClient, ConverseStreamCommand } = require('@aws-sdk/client-bedrock-runtime');
+        // Uses default credential provider chain (AWS CLI, IAM roles, SSO, env vars)
+        const bedrockClient = new BedrockRuntimeClient({
+            region: process.env.AWS_REGION || 'us-east-1',
+        });
+        const modelId = process.env.BEDROCK_MODEL_ID || 'amazon.titan-text-express-v1';
         const { ragIndex } = getData();
 
         // RAG: Search for relevant schemes
@@ -47,7 +47,7 @@ module.exports = async function handler(req, res) {
             }
         }
 
-        const systemInstruction = `You are JanSeva AI, a helpful and knowledgeable civic services assistant for Indian citizens.
+        const systemPrompt = `You are JanSeva AI, a helpful and knowledgeable civic services assistant for Indian citizens.
 Your role is to help citizens:
 - Discover government welfare schemes they may be eligible for
 - Understand eligibility criteria and application processes
@@ -64,17 +64,24 @@ Guidelines:
 - Always provide actionable next steps when possible
 ${contextBlock}`;
 
-        const model = gemini.getGenerativeModel({
-            model: 'gemini-2.0-flash-lite',
-            systemInstruction: systemInstruction,
-        });
-
-        const geminiHistory = history.slice(-10).map(msg => ({
-            role: msg.role === 'assistant' ? 'model' : 'user',
-            parts: [{ text: msg.content }],
+        // Build Bedrock conversation history
+        const bedrockHistory = history.slice(-10).map(msg => ({
+            role: msg.role === 'assistant' ? 'assistant' : 'user',
+            content: [{ text: msg.content }],
         }));
 
-        const chat = model.startChat({ history: geminiHistory });
+        // Add current user message
+        bedrockHistory.push({
+            role: 'user',
+            content: [{ text: message }],
+        });
+
+        const command = new ConverseStreamCommand({
+            modelId,
+            messages: bedrockHistory,
+            system: [{ text: systemPrompt }],
+            inferenceConfig: { maxTokens: 1024, temperature: 0.7, topP: 0.9 },
+        });
 
         // Stream response via SSE
         res.setHeader('Content-Type', 'text/event-stream');
@@ -82,12 +89,14 @@ ${contextBlock}`;
         res.setHeader('Connection', 'keep-alive');
         res.setHeader('X-Accel-Buffering', 'no');
 
-        const result = await chat.sendMessageStream(message);
+        const response = await bedrockClient.send(command);
 
-        for await (const chunk of result.stream) {
-            const content = chunk.text();
-            if (content) {
-                res.write(`data: ${JSON.stringify({ content })}\n\n`);
+        for await (const item of response.stream) {
+            if (item.contentBlockDelta) {
+                const content = item.contentBlockDelta.delta?.text;
+                if (content) {
+                    res.write(`data: ${JSON.stringify({ content })}\n\n`);
+                }
             }
         }
 
@@ -97,13 +106,14 @@ ${contextBlock}`;
         console.error('[Chat Error]', err.message);
 
         let cleanError = 'Something went wrong. Please try again.';
+        const errName = err.name || '';
         const msg = err.message || '';
-        if (msg.includes('429') || msg.includes('quota') || msg.includes('RESOURCE_EXHAUSTED')) {
+        if (errName === 'ThrottlingException' || msg.includes('throttl')) {
             cleanError = 'Rate limit reached. Please wait a moment and try again.';
-        } else if (msg.includes('API_KEY_INVALID') || msg.includes('401')) {
-            cleanError = 'Invalid API key. Please check your GEMINI_API_KEY.';
-        } else if (msg.includes('SAFETY')) {
-            cleanError = 'The response was blocked by safety filters. Try rephrasing your question.';
+        } else if (errName === 'AccessDeniedException' || msg.includes('Access Denied')) {
+            cleanError = 'Access denied. Please check your AWS credentials and Bedrock model access.';
+        } else if (errName === 'ValidationException') {
+            cleanError = 'Invalid request. The model may not support this input format.';
         }
 
         if (res.headersSent) {

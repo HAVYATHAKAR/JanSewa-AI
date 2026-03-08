@@ -3,7 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
-const { GoogleGenerativeAI } = require('@google/generative-ai');
+const { BedrockRuntimeClient, ConverseStreamCommand } = require('@aws-sdk/client-bedrock-runtime');
 const { loadSchemes, scrapeSchemes } = require('./scraper');
 const { buildIndex, search, filterSchemes, extractFilters } = require('./rag');
 
@@ -17,10 +17,14 @@ app.use(express.json());
 const distPath = path.join(__dirname, '..', 'dist');
 app.use(express.static(distPath));
 
-// Initialize Gemini client (only if API key is present)
-const gemini = process.env.GEMINI_API_KEY && process.env.GEMINI_API_KEY !== 'your_gemini_api_key_here'
-    ? new GoogleGenerativeAI(process.env.GEMINI_API_KEY)
-    : null;
+// Initialize Amazon Bedrock client using the default credential provider chain.
+// Credentials are auto-discovered from: AWS CLI profile (~/.aws/credentials),
+// IAM roles (EC2/Lambda/ECS), SSO, or environment variables.
+const bedrockClient = new BedrockRuntimeClient({
+    region: process.env.AWS_REGION || 'us-east-1',
+});
+
+const BEDROCK_MODEL_ID = process.env.BEDROCK_MODEL_ID || 'amazon.titan-text-express-v1';
 
 // In-memory state
 let schemes = [];
@@ -136,7 +140,7 @@ app.post('/api/scrape', async (req, res) => {
 });
 
 /**
- * POST /api/chat — RAG-augmented AI chat with Gemini streaming
+ * POST /api/chat — RAG-augmented AI chat with Amazon Bedrock streaming
  * Body: { message: string, history: [{ role, content }] }
  * Response: Server-Sent Events stream
  */
@@ -147,12 +151,7 @@ app.post('/api/chat', async (req, res) => {
         return res.status(400).json({ success: false, error: 'Message is required' });
     }
 
-    if (!gemini) {
-        return res.status(503).json({
-            success: false,
-            error: 'AI chat is not configured. Please add your GEMINI_API_KEY to server/.env and restart the server.',
-        });
-    }
+
 
     try {
         // 1. RAG: Search for relevant schemes
@@ -175,8 +174,8 @@ app.post('/api/chat', async (req, res) => {
             }
         }
 
-        // 2. Build system instruction
-        const systemInstruction = `You are JanSeva AI, a helpful and knowledgeable civic services assistant for Indian citizens.
+        // 2. Build system prompt
+        const systemPrompt = `You are JanSeva AI, a helpful and knowledgeable civic services assistant for Indian citizens.
 Your role is to help citizens:
 - Discover government welfare schemes they may be eligible for
 - Understand eligibility criteria and application processes
@@ -193,19 +192,25 @@ Guidelines:
 - Always provide actionable next steps when possible
 ${contextBlock}`;
 
-        // 3. Initialize Gemini model with system instruction
-        const model = gemini.getGenerativeModel({
-            model: 'gemini-2.0-flash-lite',
-            systemInstruction: systemInstruction,
-        });
-
-        // 4. Build Gemini chat history (map assistant -> model role)
-        const geminiHistory = history.slice(-10).map(msg => ({
-            role: msg.role === 'assistant' ? 'model' : 'user',
-            parts: [{ text: msg.content }],
+        // 3. Build Bedrock conversation history
+        const bedrockHistory = history.slice(-10).map(msg => ({
+            role: msg.role === 'assistant' ? 'assistant' : 'user',
+            content: [{ text: msg.content }],
         }));
 
-        const chat = model.startChat({ history: geminiHistory });
+        // Add the current user message
+        bedrockHistory.push({
+            role: 'user',
+            content: [{ text: message }],
+        });
+
+        // 4. Create Bedrock ConverseStream command
+        const command = new ConverseStreamCommand({
+            modelId: BEDROCK_MODEL_ID,
+            messages: bedrockHistory,
+            system: [{ text: systemPrompt }],
+            inferenceConfig: { maxTokens: 1024, temperature: 0.7, topP: 0.9 },
+        });
 
         // 5. Stream response via SSE
         res.setHeader('Content-Type', 'text/event-stream');
@@ -213,12 +218,14 @@ ${contextBlock}`;
         res.setHeader('Connection', 'keep-alive');
         res.setHeader('X-Accel-Buffering', 'no');
 
-        const result = await chat.sendMessageStream(message);
+        const response = await bedrockClient.send(command);
 
-        for await (const chunk of result.stream) {
-            const content = chunk.text();
-            if (content) {
-                res.write(`data: ${JSON.stringify({ content })}\n\n`);
+        for await (const item of response.stream) {
+            if (item.contentBlockDelta) {
+                const content = item.contentBlockDelta.delta?.text;
+                if (content) {
+                    res.write(`data: ${JSON.stringify({ content })}\n\n`);
+                }
             }
         }
 
@@ -229,13 +236,14 @@ ${contextBlock}`;
 
         // Parse a clean error message
         let cleanError = 'Something went wrong. Please try again.';
+        const errName = err.name || '';
         const msg = err.message || '';
-        if (msg.includes('429') || msg.includes('quota') || msg.includes('RESOURCE_EXHAUSTED')) {
+        if (errName === 'ThrottlingException' || msg.includes('throttl')) {
             cleanError = 'Rate limit reached. Please wait a moment and try again.';
-        } else if (msg.includes('API_KEY_INVALID') || msg.includes('401')) {
-            cleanError = 'Invalid API key. Please check your GEMINI_API_KEY in server/.env.';
-        } else if (msg.includes('SAFETY')) {
-            cleanError = 'The response was blocked by safety filters. Try rephrasing your question.';
+        } else if (errName === 'AccessDeniedException' || msg.includes('Access Denied')) {
+            cleanError = 'Access denied. Please check your AWS credentials and Bedrock model access.';
+        } else if (errName === 'ValidationException') {
+            cleanError = 'Invalid request. The model may not support this input format.';
         }
 
         if (res.headersSent) {
@@ -255,7 +263,8 @@ app.get('/api/health', (req, res) => {
         status: 'ok',
         schemesLoaded: schemes.length,
         indexReady: ragIndex !== null,
-        aiReady: gemini !== null,
+        aiReady: true,
+        modelId: BEDROCK_MODEL_ID,
         timestamp: new Date().toISOString(),
     });
 });
@@ -271,13 +280,13 @@ initialize().then(() => {
         console.log(`\n🏛  JanSeva AI Backend running on http://localhost:${PORT}`);
         console.log(`   📊 ${schemes.length} schemes loaded`);
         console.log(`   🔎 RAG search index ready`);
-        console.log(`   🤖 AI Chat: ${gemini ? 'Ready (Gemini)' : '⚠ Not configured — set GEMINI_API_KEY in .env'}`);
+        console.log(`   🤖 AI Chat: Ready (Bedrock: ${BEDROCK_MODEL_ID}, credentials: default chain)`);
         console.log(`\n   API Endpoints:`);
         console.log(`   GET  /api/schemes      — List schemes`);
         console.log(`   GET  /api/schemes/:id  — Scheme details`);
         console.log(`   GET  /api/search?q=... — RAG search`);
         console.log(`   GET  /api/filters      — Filter options`);
-        console.log(`   POST /api/chat         — AI chat (RAG + Gemini)`);
+        console.log(`   POST /api/chat         — AI chat (RAG + Bedrock)`);
         console.log(`   POST /api/scrape       — Trigger scrape`);
         console.log(`   GET  /api/health       — Health check\n`);
     });
