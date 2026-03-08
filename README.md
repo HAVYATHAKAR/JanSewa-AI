@@ -2,7 +2,7 @@
 
 > AI-powered public access platform that helps Indian citizens discover government welfare schemes and raise civic complaints with ease.
 
-[![Live Demo](https://img.shields.io/badge/Live-jansewaai.vercel.app-blue?style=for-the-badge)](https://jansewaai.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live-jansewaai.vercel.app-blue?style=for-the-badge)](https://jansewa-ai-1.onrender.com/)
 
 ---
 
